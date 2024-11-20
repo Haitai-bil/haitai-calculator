@@ -24,9 +24,9 @@ function initializeMaterialLists() {
     // 初始化杂货材料
     const miscItems = [
         "良之精火", "珍之精火", "灵之精火", "至纯精华",
-        // 添加新的鱼鲜系列
+        // 鱼鲜系列
         "1级鱼鲜", "2级鱼鲜", "3级鱼鲜", "4级鱼鲜", "5级鱼鲜",
-        // 添加新的特殊物品
+        // 特殊物品
         "涵虚·麒麟兰寿", "雪豹兰寿", "玉面红袍"
     ];
     createMaterialList('misc-materials', miscItems);
@@ -134,7 +134,7 @@ function calculateProfit() {
     // 获取元气消耗
     const makeEnergy = window.energyCostData?.[profession]?.[recipeName] || 0;
     
-    // 更新元气消耗显示
+    // 新元气消耗显示
     document.getElementById('make-energy').textContent = makeEnergy;
     
     // 计算每点元气收益
@@ -161,8 +161,8 @@ function showCopyrightInfo() {
     });
 }
 
-// 创建模态框
-function createModal(options) {
+// 创建模态框函数（如果还没有定义的话）
+window.createModal = function(options) {
     const modalContainer = document.getElementById('modal-container');
     const modal = document.createElement('div');
     modal.className = 'modal';
@@ -194,7 +194,7 @@ function createModal(options) {
     }
 
     return modal;
-}
+};
 
 // 计算函数
 function calculate() {
@@ -353,6 +353,12 @@ function displayCraftMethod(recipe) {
         recipe.materials.forEach(material => {
             formula += `${material.name} × ${material.amount}\n`;
         });
+        
+        // 如果是烹饪配方且有烹饪成本，添加���配方显示中
+        if (recipe.cookingCost > 0) {
+            formula += `\n制作费用: ${recipe.cookingCost} 银两`;
+        }
+        
         craftMethodTextarea.value = formula;
     } else {
         craftMethodTextarea.value = '暂无合成公式';
