@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海苔生活系统</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: url('/haitai-calculator/images/3840.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* 添加背景遮罩，使内容更容易阅读 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(245, 247, 250, 0.7) 0%, rgba(195, 207, 226, 0.7) 100%);
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: inline-block;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #3498db, transparent);
+        }
+
+        .marquee-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 2rem auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 90%;
+            max-width: 1000px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .marquee {
+            white-space: nowrap;
+            animation: marquee 25s linear infinite;
+            display: inline-block;
+            padding-right: 50px;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .announcement {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .function-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            perspective: 1000px;
+        }
+
+        .function-card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .function-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: 0.5s;
+        }
+
+        .function-card:hover {
+            transform: translateY(-5px) rotateX(5deg) rotateY(5deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .function-card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .function-card h2 {
+            margin: 0 0 1rem 0;
+            color: #2c3e50;
+            font-size: 1.5em;
+        }
+
+        .function-card p {
+            margin: 0;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            margin: 0;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out 1s forwards;
+            transform: scale(0.9);
+            z-index: 100;
+        }
+
+        .contact-info p {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2c3e50;
+            font-size: 0.9em;
+            position: relative;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .contact-info p::before {
+            width: 18px;
+            height: 18px;
+        }
+
+        .contact-info p:hover {
+            background: rgba(52, 152, 219, 0.1);
+            transform: translateX(3px);
+        }
+
+        .disabled-card {
+            cursor: not-allowed;
+            opacity: 0.7;
+            filter: grayscale(30%);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+
+            .function-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .marquee-container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .contact-info {
+                left: 10px;
+                bottom: 10px;
+                padding: 8px;
+            }
+
+            .copy-tooltip {
+                left: auto;
+                right: 105%;
+                transform: translateY(-50%);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .animate-title {
+            animation: fadeInScale 0.8s ease-out;
+        }
+
+        .animate-marquee {
+            animation: fadeInUp 0.8s ease-out 0.3s both;
+        }
+
+        .function-grid {
+            /* 保持原有样式 */
+            perspective: 1000px;
+        }
+
+        .function-card {
+            /* 保持原有样式 */
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .function-card:nth-child(1) {
+            animation-delay: 0.6s;
+        }
+
+        .function-card:nth-child(2) {
+            animation-delay: 0.8s;
+        }
+
+        .contact-info {
+            /* 保持原有样式 */
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out 1s forwards;
+        }
+
+        /* 添加鼠标悬停时的 3D 效果 */
+        .function-card {
+            transition: transform 0.3s ease;
+            transform-style: preserve-3d;
+        }
+
+        .function-card:hover {
+            transform: translateY(-5px) rotateX(5deg) rotateY(5deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 添加按钮点击效果 */
+        .function-card:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 优化禁用卡片的动画效果 */
+        .disabled-card:hover {
+            transform: none;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 添加页面加载动画 */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #ffffff;
+            border-top-color: #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* 修改复制提示样式 */
+        .copy-tooltip {
+            position: absolute;
+            background: rgba(44, 62, 80, 0.9);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            left: 105%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .contact-info p:hover .copy-tooltip {
+            opacity: 1;
+        }
+
+        /* 添加复制成功动画 */
+        @keyframes copySuccess {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+                background: rgba(46, 204, 113, 0.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* 添加复制成功提示框 */
+        .copy-notification {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: rgba(46, 204, 113, 0.95);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .copy-notification.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* 添加复制图标 */
+        .contact-info p::after {
+            content: '📋';
+            font-size: 0.9em;
+            margin-left: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-info p:hover::after {
+            opacity: 1;
+        }
+
+        /* 添加联系方式的悬浮缩放效果 */
+        .contact-info:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- 添加页面加载动画 -->
+    <div class="page-loader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="container">
+        <h1 class="animate-title">海苔生活系统</h1>
+        
+        <div class="marquee-container animate-marquee">
+            <div class="marquee">
+                <span class="announcement">公告：欢迎使用海苔生活系统！目前计算器功能已开放使用，更功能正在开发中，敬请期待！如有问题请联系QQ或加入QQ群！</span>
+            </div>
+        </div>
+
+        <div class="function-grid">
+            <a href="/haitai-calculator/calculator.html" style="text-decoration: none;">
+                <div class="function-card">
+                    <h2>生活系统计算器</h2>
+                    <p>专业的生活技能制作物品成本收益计算工具，帮助您合理规划生产，最大化收益。</p>
+                </div>
+            </a>
+            <div class="function-card disabled-card">
+                <h2>更多功能开发中</h2>
+                <p>我们正在开发更多实用功能，敬请期待更新...</p>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <p onclick="copyToClipboard('3180468481', this)">
+                海苔QQ：3180468481
+                <span class="copy-tooltip">点击复制</span>
+            </p>
+            <p onclick="copyToClipboard('484403350', this)">
+                海苔Q群：484403350
+                <span class="copy-tooltip">点击复制</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="copy-notification" id="copyNotification">已复制到剪贴板！</div>
+
+    <script>
+        // 页面加载完成后移除加载动画
+        window.addEventListener('load', function() {
+            // 处理跑马灯
+            const marquee = document.querySelector('.marquee');
+            const announcement = document.querySelector('.announcement');
+            
+            if (announcement.offsetWidth > marquee.offsetWidth) {
+                const clone = announcement.cloneNode(true);
+                marquee.appendChild(clone);
+            }
+
+            // 移除加载动画
+            setTimeout(() => {
+                document.querySelector('.page-loader').classList.add('fade-out');
+            }, 500);
+        });
+
+        // 添加鼠标移动时的 3D 效果
+        document.querySelectorAll('.function-card:not(.disabled-card)').forEach(card => {
+            card.addEventListener('mousemove', function(e) {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+                
+                this.style.transform = `translateY(-5px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) rotateX(0) rotateY(0)';
+            });
+        });
+
+        function copyToClipboard(text, element) {
+            navigator.clipboard.writeText(text).then(() => {
+                // 添加复制动画
+                element.style.animation = 'copySuccess 0.5s ease';
+                setTimeout(() => {
+                    element.style.animation = '';
+                }, 500);
+
+                // 显示复制成功提示
+                const notification = document.getElementById('copyNotification');
+                notification.classList.add('show');
+                
+                // 更新工具提示文本
+                const tooltip = element.querySelector('.copy-tooltip');
+                tooltip.textContent = '已复制！';
+
+                // 3秒后隐藏提示
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    tooltip.textContent = '点击复制';
+                }, 2000);
+            }).catch(err => {
+                console.error('复制失败:', err);
+                const tooltip = element.querySelector('.copy-tooltip');
+                tooltip.textContent = '复制失败';
+                setTimeout(() => {
+                    tooltip.textContent = '点击复制';
+                }, 2000);
+            });
+        }
+
+        // 确保通知元素的正确定位
+        document.addEventListener('DOMContentLoaded', () => {
+            const notification = document.getElementById('copyNotification');
+            document.body.appendChild(notification);
+        });
+    </script>
+</body>
+</html> 

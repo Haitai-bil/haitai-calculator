@@ -1,0 +1,10 @@
+{
+    "自定义配方示例": {
+        "description": "这是一个自定义配方示例 产出1个",
+        "materials": [
+            {"name": "生铁砂", "amount": 1},
+            {"name": "栎木", "amount": 1}
+        ],
+        "outputCount": 1
+    }
+} 

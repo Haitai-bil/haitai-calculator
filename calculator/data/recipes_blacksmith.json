@@ -1,0 +1,774 @@
+{
+    "启明剑": {
+        "description": "使用3个栎木合成",
+        "materials": [
+            {"name": "栎木", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "切玉剑": {
+        "description": "使用3个生铁砂、1个栎木和2个良之精火合成",
+        "materials": [
+            {"name": "生铁砂", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "悬星剑": {
+        "description": "使用3个黝钢沙、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黝钢沙", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "长庚剑": {
+        "description": "使用3个透花岩、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "透花岩", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "挽长河·剑": {
+        "description": "使用3个碎榴晶、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "碎榴晶", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "夜辰刀": {
+        "description": "使用3个栎木合成",
+        "materials": [
+            {"name": "栎木", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "金错刀": {
+        "description": "使用3个生铁砂、1个栎木和2个良之精火合成",
+        "materials": [
+            {"name": "生铁砂", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "昆吾刀": {
+        "description": "使用3个黝钢沙、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黝钢沙", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "罗堰刀": {
+        "description": "使用3个透花岩、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "透花岩", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "战于野·刀": {
+        "description": "使用3个碎榴晶、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "碎榴晶", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "醉月环": {
+        "description": "使用3个栎木合成",
+        "materials": [
+            {"name": "栎木", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "沧海环": {
+        "description": "使用3个生铁砂、1个栎木和2个良之精火合成",
+        "materials": [
+            {"name": "生铁砂", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "化影环": {
+        "description": "使用3个黝钢沙、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黝钢沙", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "紫曜环": {
+        "description": "使用3个透花岩、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "透花岩", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "寄明月·环": {
+        "description": "使用3个碎榴晶、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "碎榴晶", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "玄离匣": {
+        "description": "使用3个栎木合成",
+        "materials": [
+            {"name": "栎木", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "蹙金匣": {
+        "description": "使用3个生铁砂、1个栎木和2个良之精火合成",
+        "materials": [
+            {"name": "生铁砂", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "龙吟匣": {
+        "description": "使用3个黝钢沙、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黝钢沙", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "萤惑匣": {
+        "description": "使用3个透花岩、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "透花岩", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "焚龙阙·匣": {
+        "description": "使用3个碎榴晶、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "碎榴晶", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "云漪镜": {
+        "description": "使用3个栎木合成",
+        "materials": [
+            {"name": "栎木", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "照水镜": {
+        "description": "使用3个生铁砂、1个栎木和2个良之精火合成",
+        "materials": [
+            {"name": "生铁砂", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "流萤镜": {
+        "description": "使用3个黝钢沙、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黝钢沙", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "天渊镜": {
+        "description": "使用3个透花岩、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "透花岩", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "拨云澜·镜": {
+        "description": "使用3个碎榴晶、1个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "碎榴晶", "amount": 3},
+            {"name": "栎木", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "锐革盔": {
+        "description": "使用2个粗黄铜、3个麻布和2个良之精火合成",
+        "materials": [
+            {"name": "粗黄铜", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "鎏金盔": {
+        "description": "使用2个雷碣片、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雷碣片", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "罗堰盔": {
+        "description": "使用2个岭皂、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "岭皂", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "玄黄血·盔": {
+        "description": "使用2个黛晶珠、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "锐革靴": {
+        "description": "使用2个粗黄铜、3个生皮和2个良之精火合成",
+        "materials": [
+            {"name": "粗黄铜", "amount": 2},
+            {"name": "生皮", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "鎏金靴": {
+        "description": "使用2个雷碣片、3个生皮、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雷碣片", "amount": 2},
+            {"name": "生皮", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "罗堰靴": {
+        "description": "使用2个岭皂、3个生皮、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "岭皂", "amount": 2},
+            {"name": "生皮", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "玄黄血·靴": {
+        "description": "使用2个黛晶珠、3个生皮、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "生皮", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "锐革铠": {
+        "description": "使用2个粗黄铜、3个麻布和2个良之精火合成",
+        "materials": [
+            {"name": "粗黄铜", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "鎏金铠": {
+        "description": "使用2个雷碣片、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雷碣片", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "罗堰铠": {
+        "description": "使用2个岭皂、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "岭皂", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "玄黄血·铠": {
+        "description": "使用2个黛晶珠、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "锐革臂": {
+        "description": "使用2个粗黄铜、3个麻布和2个良之精火合成",
+        "materials": [
+            {"name": "粗黄铜", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "鎏金臂": {
+        "description": "使用2个雷碣片、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雷碣片", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "罗堰臂": {
+        "description": "使用2个岭皂、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "岭皂", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "玄黄血·臂": {
+        "description": "使用2个黛晶珠、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "大司马·臂": {
+        "description": "使用2个黛晶珠、3个麻布、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "天仙魔道·臂": {
+        "description": "使用4个黛晶珠、5个至纯精华、4个灵矿髓、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1
+    },
+    "锐革带": {
+        "description": "使用2个粗黄铜、3个麻布和2个良之精火合成",
+        "materials": [
+            {"name": "粗黄铜", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "鎏金带": {
+        "description": "使用2个雷碣片、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雷碣片", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "罗堰带": {
+        "description": "使用2个岭皂、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "岭皂", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "玄黄血·带": {
+        "description": "使用2个黛晶珠、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "大司马·带": {
+        "description": "使用2个黛晶珠、3个麻布、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "天仙魔道·带": {
+        "description": "使用4个黛晶珠、5个至纯精华、4个灵矿髓、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1
+    },
+    "明珠盔": {
+        "description": "使用2个粗黄铜、3个麻布和2个良之精火合成",
+        "materials": [
+            {"name": "粗黄铜", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "烟霓盔": {
+        "description": "使用2个雷碣片、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雷碣片", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "紫曜盔": {
+        "description": "使用2个岭皂、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "岭皂", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "让星辰·盔": {
+        "description": "使用2个黛晶珠、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "明珠靴": {
+        "description": "使用2个粗黄铜、3个生皮和1个良之精火合成",
+        "materials": [
+            {"name": "粗黄铜", "amount": 2},
+            {"name": "生皮", "amount": 3},
+            {"name": "良之精火", "amount": 1}
+        ],
+        "outputCount": 1
+    },
+    "烟霓靴": {
+        "description": "使用2个雷碣片、3个生皮、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雷碣片", "amount": 2},
+            {"name": "生皮", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "紫曜靴": {
+        "description": "使用2个岭皂、3个生皮、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "岭皂", "amount": 2},
+            {"name": "生皮", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "让星辰·靴": {
+        "description": "使用2个黛晶珠、3个生皮、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "生皮", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "明珠衫": {
+        "description": "使用2个粗黄铜、3个麻布和2个良之精火合成",
+        "materials": [
+            {"name": "粗黄铜", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "烟霓衫": {
+        "description": "使用2个雷碣片、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雷碣片", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "紫曜衫": {
+        "description": "使用2个岭皂、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "岭皂", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "让星辰·衫": {
+        "description": "使用2个黛晶珠、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "明珠臂": {
+        "description": "使用2个粗黄铜、3个麻布和2个良之精火合成",
+        "materials": [
+            {"name": "粗黄铜", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "烟霓臂": {
+        "description": "使用2个雷碣片、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雷碣片", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "紫曜臂": {
+        "description": "使用2个岭皂、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "岭皂", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "让星辰·臂": {
+        "description": "使用2个黛晶珠、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "洛神臂": {
+        "description": "使用2个黛晶珠、3个麻布、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "月明星稀·臂": {
+        "description": "使用4个黛晶珠、5个至纯精华、4个灵矿髓、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1
+    },
+    "明珠带": {
+        "description": "使用2个粗黄铜、3个麻布和2个良之精火合成",
+        "materials": [
+            {"name": "粗黄铜", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "烟霓带": {
+        "description": "使用2个雷碣片、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雷碣片", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "紫曜带": {
+        "description": "使用2个岭皂、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "岭皂", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "让星辰·带": {
+        "description": "使用2个黛晶珠、3个麻布、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "洛神带": {
+        "description": "使用2个黛晶珠、3个麻布、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 2},
+            {"name": "麻布", "amount": 3},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "月明星稀·带": {
+        "description": "使用4个黛晶珠、5个至纯精华、4个灵矿髓、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1
+    },
+    "孔明灯": {
+        "description": "使用1个黛晶珠、1个碎榴晶和3个栎木合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 1},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "栎木", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "胭脂盒": {
+        "description": "使用1个黛晶珠、1个碎榴晶和3个栎木合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 1},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "栎木", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "骰子挂坠": {
+        "description": "使用1个黛晶珠、1个碎榴晶和3个栎木合成",
+        "materials": [
+            {"name": "黛晶珠", "amount": 1},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "栎木", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "磨刀石": {
+        "description": "使用2个黝钢沙、1个珍之精火和3个良之精火合成",
+        "materials": [
+            {"name": "黝钢沙", "amount": 2},
+            {"name": "珍之精火", "amount": 1},
+            {"name": "良之精火", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "磨刃石": {
+        "description": "使用2个透花岩、1个珍之精火和3个良之精火合成",
+        "materials": [
+            {"name": "透花岩", "amount": 2},
+            {"name": "珍之精火", "amount": 1},
+            {"name": "良之精火", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "磨刀石·聚": {
+        "description": "使用2个碎榴晶、1个珍之精火和3个良之精火合成",
+        "materials": [
+            {"name": "碎榴晶", "amount": 2},
+            {"name": "珍之精火", "amount": 1},
+            {"name": "良之精火", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "磨刃石·聚": {
+        "description": "使用2个碎榴晶、1个灵矿髓、1个灵之精火和3个珍之精火合成",
+        "materials": [
+            {"name": "碎榴晶", "amount": 2},
+            {"name": "灵矿髓", "amount": 1},
+            {"name": "灵之精火", "amount": 1},
+            {"name": "珍之精火", "amount": 3}
+        ],
+        "outputCount": 1
+    }
+} 

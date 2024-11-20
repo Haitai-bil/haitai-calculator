@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海苔生活系统计算器</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 添加页面加载动画 */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #ffffff;
+            border-top-color: #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* 添加内容渐入动画 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container > * {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        header {
+            animation-delay: 0.3s;
+        }
+
+        .materials-section {
+            animation-delay: 0.5s;
+        }
+
+        .calculation-section {
+            animation-delay: 0.7s;
+        }
+
+        /* 返回按钮样式 */
+        .return-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: #2c3e50;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .return-button:hover {
+            background: rgba(255, 255, 255, 1);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .return-button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .return-icon {
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        /* 在 head 中添加背景样式 */
+        body {
+            /* 添加背景图 */
+            background: url('images/3840.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 添加背景遮罩 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(245, 247, 250, 0.85) 0%, rgba(195, 207, 226, 0.85) 100%);
+            z-index: -1;
+        }
+
+        /* 调整容器背景透明度 */
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin: 0 auto;
+            max-width: 1400px;
+            width: 95%;
+            padding: 30px;
+            position: relative;
+        }
+
+        /* 调整其他元素的背景透明度 */
+        .material-group, .calculation-section {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .result-block {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        /* 调整主内容区域布局 */
+        .main-content {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* 调整左侧材料区域 */
+        .materials-section {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        /* 调整右侧计算区域 */
+        .calculation-section {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        /* 确保标题居中 */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* 响应式布局调整 */
+        @media (max-width: 1200px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .materials-section,
+            .calculation-section {
+                max-width: 100%;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+
+        /* 调整返回按钮位置 */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-loader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="container">
+        <a href="../index.html" class="return-button">
+            <span class="return-icon">←</span>
+            <span>返回主页</span>
+        </a>
+        
+        <header>
+            <h1>海苔生活系统计算器</h1>
+        </header>
+
+        <div class="main-content">
+            <div class="materials-section">
+                <div class="material-group">
+                    <div class="material-title">杂货</div>
+                    <div class="material-content">
+                        <div class="material-header">
+                            <span>材料名称</span>
+                            <span>单价</span>
+                            <span>数量</span>
+                        </div>
+                        <div id="misc-materials" class="material-list"></div>
+                    </div>
+                </div>
+
+                <div class="material-group">
+                    <div class="material-title">矿物</div>
+                    <div class="material-content">
+                        <div class="material-header">
+                            <span>材料名称</span>
+                            <span>单价</span>
+                            <span>数量</span>
+                        </div>
+                        <div id="mine-materials" class="material-list"></div>
+                    </div>
+                </div>
+
+                <div class="material-group">
+                    <div class="material-title">采摘</div>
+                    <div class="material-content">
+                        <div class="material-header">
+                            <span>材料名称</span>
+                            <span>单价</span>
+                            <span>数量</span>
+                        </div>
+                        <div id="herb-materials" class="material-list"></div>
+                    </div>
+                </div>
+
+                <div class="material-group">
+                    <div class="material-title">商店</div>
+                    <div class="material-content">
+                        <div class="material-header">
+                            <span>材料名称</span>
+                            <span>单价</span>
+                            <span>数量</span>
+                        </div>
+                        <div id="shop-materials" class="material-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculation-section">
+                <div class="top-section">
+                    <div class="recipe-selection">
+                        <div class="select-group">
+                            <label>职业：</label>
+                            <select id="profession-select">
+                                <option value="blacksmith">锻造</option>
+                                <option value="tailor">裁缝</option>
+                                <option value="alchemist">炼药</option>
+                                <option value="sculptor">雕刻</option>
+                            </select>
+                        </div>
+                        <div class="select-group">
+                            <label>配方：</label>
+                            <select id="recipe-select"></select>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-label">海苔QQ：</span>
+                            <span class="contact-value">3180468481</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">海苔Q群：</span>
+                            <span class="contact-value">484403350</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculation-results">
+                    <h3>计算结果</h3>
+                    <div class="result-grid">
+                        <div class="result-block">
+                            <div class="result-title">材料成本</div>
+                            <div class="result-content">
+                                <div class="result-label">材料总成本：</div>
+                                <div class="result-value" id="total-cost">0 银两</div>
+                            </div>
+                        </div>
+
+                        <div class="result-block">
+                            <div class="result-title">拍卖价格</div>
+                            <div class="result-content">
+                                <div class="result-label">拍卖行价格：</div>
+                                <div class="result-value">
+                                    <input type="number" id="auction-price" value="0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-block">
+                            <div class="result-title">预期利润</div>
+                            <div class="result-content">
+                                <div class="result-label">预期利润：</div>
+                                <div class="result-value" id="profit">0 银两</div>
+                            </div>
+                        </div>
+
+                        <div class="result-block">
+                            <div class="result-title">利润率</div>
+                            <div class="result-content">
+                                <div class="result-label">利润率：</div>
+                                <div class="result-value" id="profit-rate">0%</div>
+                            </div>
+                        </div>
+
+                        <div class="result-block">
+                            <div class="result-title">元气消耗</div>
+                            <div class="result-content">
+                                <div class="result-label">制作元气：</div>
+                                <div class="result-value" id="make-energy">0</div>
+                            </div>
+                        </div>
+
+                        <div class="result-block">
+                            <div class="result-title">元气收益</div>
+                            <div class="result-content">
+                                <div class="result-label">元气收益：</div>
+                                <div class="result-value" id="profit-per-energy">0 银两</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="craft-method">
+                        <label>合成方式：</label>
+                        <textarea id="craft-method" readonly></textarea>
+                    </div>
+                </div>
+
+                <div class="control-panel">
+                    <button id="load-prices" disabled title="功能开发中">加载价格（读取拍卖行API）</button>
+                    <button id="clear-quantities">清除数量</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-container" class="modal-container"></div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/recipes.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            // 移除加载动画
+            setTimeout(() => {
+                document.querySelector('.page-loader').classList.add('fade-out');
+            }, 500);
+        });
+    </script>
+</body>
+</html> 

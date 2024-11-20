@@ -1,0 +1,489 @@
+{
+    "归元丸": {
+        "description": "使用2个蓇蓉华和3个银粉合成",
+        "materials": [
+            {"name": "蓇蓉华", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "离火丸": {
+        "description": "使用2个无条盏和3个银粉合成",
+        "materials": [
+            {"name": "无条盏", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "小还丹": {
+        "description": "使用1个清泉和1个银粉合成",
+        "materials": [
+            {"name": "清泉", "amount": 1},
+            {"name": "银粉", "amount": 1}
+        ],
+        "outputCount": 1,
+        "energy": 8
+    },
+    "小还丹·凝": {
+        "description": "使用2个焉酸草和3个清泉合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "清泉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "理气丸": {
+        "description": "使用2个无条盏和3个银粉合成",
+        "materials": [
+            {"name": "无条盏", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "地裂丸": {
+        "description": "使用2个蓇蓉华和3个银粉合成",
+        "materials": [
+            {"name": "蓇蓉华", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "归元丸·凝": {
+        "description": "使用2个苦辛萼和3个银粉合成",
+        "materials": [
+            {"name": "苦辛萼", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "离火丸·凝": {
+        "description": "使用2个黄雚盏和3个银粉合成",
+        "materials": [
+            {"name": "黄雚盏", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "大还丹": {
+        "description": "使用2个金灯红和3个清泉合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "清泉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "地裂丸·凝": {
+        "description": "使用2个苦辛萼和3个银粉合成",
+        "materials": [
+            {"name": "苦辛萼", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "理气丸·凝": {
+        "description": "使用2个黄雚盏和3个银粉合成",
+        "materials": [
+            {"name": "黄雚盏", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "宁神丸": {
+        "description": "使用2个萤火萼和3个银粉合成",
+        "materials": [
+            {"name": "萤火萼", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "灵心丸": {
+        "description": "使用2个天楄黄和3个银粉合成",
+        "materials": [
+            {"name": "天楄黄", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "大还丹·凝": {
+        "description": "使用2个祝余盏和3个清泉合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "清泉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "破敌丸": {
+        "description": "使用2个萤火萼和3个银粉合成",
+        "materials": [
+            {"name": "萤火萼", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "静气丸": {
+        "description": "使用2个天楄黄和3个银粉合成",
+        "materials": [
+            {"name": "天楄黄", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "仙道丸": {
+        "description": "使用2个半边莲子和3个银粉合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "苍明丸": {
+        "description": "使用2个都夷枝和3个银粉合成",
+        "materials": [
+            {"name": "都夷枝", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "火煞丸": {
+        "description": "使用2个半边莲子和3个银粉合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "玄神丸": {
+        "description": "使用2个都夷枝和3个银粉合成",
+        "materials": [
+            {"name": "都夷枝", "amount": 2},
+            {"name": "银粉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "无为丸": {
+        "description": "使用2个半边莲子、3个银粉和2个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 2},
+            {"name": "银粉", "amount": 3},
+            {"name": "灵草华", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "云雀丸": {
+        "description": "使用2个都夷枝、3个银粉和2个灵草华合成",
+        "materials": [
+            {"name": "都夷枝", "amount": 2},
+            {"name": "银粉", "amount": 3},
+            {"name": "灵草华", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "紫云丹": {
+        "description": "使用2个低光荷汁和3个清泉合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "清泉", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "地藏丹": {
+        "description": "使用2个低光荷汁、3个清泉和2个灵草华合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "清泉", "amount": 3},
+            {"name": "灵草华", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "破幽丸": {
+        "description": "使用2个半边莲子、3个银粉和2个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 2},
+            {"name": "银粉", "amount": 3},
+            {"name": "灵草华", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "无妄丸": {
+        "description": "使用2个都夷枝、3个银粉和2个灵草华合成",
+        "materials": [
+            {"name": "都夷枝", "amount": 2},
+            {"name": "银粉", "amount": 3},
+            {"name": "灵草华", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "紫霞明神丸": {
+        "description": "使用4个半边莲子、6个银粉和4个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 4},
+            {"name": "银粉", "amount": 6},
+            {"name": "灵草华", "amount": 4}
+        ],
+        "outputCount": 1,
+        "energy": 20
+    },
+    "九霄仙心丸": {
+        "description": "使用4个都夷枝、6个银粉和4个灵草华合成",
+        "materials": [
+            {"name": "都夷枝", "amount": 4},
+            {"name": "银粉", "amount": 6},
+            {"name": "灵草华", "amount": 4}
+        ],
+        "outputCount": 1,
+        "energy": 20
+    },
+    "仙婴丹": {
+        "description": "使用4个低光荷汁、6个清泉和4个灵草华合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 4},
+            {"name": "清泉", "amount": 6},
+            {"name": "灵草华", "amount": 4}
+        ],
+        "outputCount": 1,
+        "energy": 20
+    },
+    "金龙破虚丸": {
+        "description": "使用4个半边莲子、6个银粉和4个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 4},
+            {"name": "银粉", "amount": 6},
+            {"name": "灵草华", "amount": 4}
+        ],
+        "outputCount": 1,
+        "energy": 20
+    },
+    "静夜神息丸": {
+        "description": "使用4个都夷枝、6个银粉和4个灵草华合成",
+        "materials": [
+            {"name": "都夷枝", "amount": 4},
+            {"name": "银粉", "amount": 6},
+            {"name": "灵草华", "amount": 4}
+        ],
+        "outputCount": 1,
+        "energy": 20
+    },
+    "朱血丹": {
+        "description": "使用1个天楄黄、1个萤火萼和3个天水合成",
+        "materials": [
+            {"name": "天楄黄", "amount": 1},
+            {"name": "萤火萼", "amount": 1},
+            {"name": "天水", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "朱影丹": {
+        "description": "使用1个天楄黄、1个萤火萼和3个天水合成",
+        "materials": [
+            {"name": "天楄黄", "amount": 1},
+            {"name": "萤火萼", "amount": 1},
+            {"name": "天水", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "朱玄丹": {
+        "description": "使用1个天楄黄、1个萤火萼和3个天水合成",
+        "materials": [
+            {"name": "天楄黄", "amount": 1},
+            {"name": "萤火萼", "amount": 1},
+            {"name": "天水", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "朱明丹": {
+        "description": "使用1个天楄黄、1个萤火萼和3个天水合成",
+        "materials": [
+            {"name": "天楄黄", "amount": 1},
+            {"name": "萤火萼", "amount": 1},
+            {"name": "天水", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "朱血丹·凝": {
+        "description": "使用1个半边莲子、1个都夷枝和3个天水合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 1},
+            {"name": "都夷枝", "amount": 1},
+            {"name": "天水", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "朱影丹·凝": {
+        "description": "使用1个半边莲子、1个都夷枝和3个天水合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 1},
+            {"name": "都夷枝", "amount": 1},
+            {"name": "天水", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "朱玄丹·凝": {
+        "description": "使用1个半边莲子、1个都夷枝和3个天水合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 1},
+            {"name": "都夷枝", "amount": 1},
+            {"name": "天水", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "朱明丹·凝": {
+        "description": "使用1个半边莲子、1个都夷枝和3个天水合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 1},
+            {"name": "都夷枝", "amount": 1},
+            {"name": "天水", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "玉真丹": {
+        "description": "使用1个半边莲子、1个都夷枝、3个天水和2个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 1},
+            {"name": "都夷枝", "amount": 1},
+            {"name": "天水", "amount": 3},
+            {"name": "灵草华", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 18
+    },
+    "玉魄丹": {
+        "description": "使用1个半边莲子、1个都夷枝、3个天水和2个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 1},
+            {"name": "都夷枝", "amount": 1},
+            {"name": "天水", "amount": 3},
+            {"name": "灵草华", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 18
+    },
+    "玉灵丹": {
+        "description": "使用1个半边莲子、1个都夷枝、3个天水和2个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 1},
+            {"name": "都夷枝", "amount": 1},
+            {"name": "天水", "amount": 3},
+            {"name": "灵草华", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 18
+    },
+    "玉神丹": {
+        "description": "使用1个半边莲子、1个都夷枝、3个天水和2个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 1},
+            {"name": "都夷枝", "amount": 1},
+            {"name": "天水", "amount": 3},
+            {"name": "灵草华", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 18
+    },
+    "玉真丹·凝": {
+        "description": "使用2个半边莲子、2个都夷枝、6个天水和4个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "天水", "amount": 6},
+            {"name": "灵草华", "amount": 4}
+        ],
+        "outputCount": 1,
+        "energy": 22
+    },
+    "玉魄丹·凝": {
+        "description": "使用2个半边莲子、2个都夷枝、6个天水和4个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "天水", "amount": 6},
+            {"name": "灵草华", "amount": 4}
+        ],
+        "outputCount": 1,
+        "energy": 22
+    },
+    "玉灵丹·凝": {
+        "description": "使用2个半边莲子、2个都夷枝、6个天水和4个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "天水", "amount": 6},
+            {"name": "灵草华", "amount": 4}
+        ],
+        "outputCount": 1,
+        "energy": 22
+    },
+    "玉神丹·凝": {
+        "description": "使用2个半边莲子、2个都夷枝、6个天水和4个灵草华合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "天水", "amount": 6},
+            {"name": "灵草华", "amount": 4}
+        ],
+        "outputCount": 1,
+        "energy": 22
+    },
+    "安神茶": {
+        "description": "使用1个半边莲子、1个都夷枝和3个天水合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 1},
+            {"name": "都夷枝", "amount": 1},
+            {"name": "天水", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "延寿饮": {
+        "description": "使用1个半边莲子、1个都夷枝和3个天水合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 1},
+            {"name": "都夷枝", "amount": 1},
+            {"name": "天水", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "萤彩涂料": {
+        "description": "使用1个半边莲子、1个都夷枝和3个天水合成",
+        "materials": [
+            {"name": "半边莲子", "amount": 1},
+            {"name": "都夷枝", "amount": 1},
+            {"name": "天水", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    }
+} 

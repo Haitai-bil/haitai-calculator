@@ -1,0 +1,908 @@
+{
+    "素锦包·8格": {
+        "description": "使用4个金灯红、2个黝钢沙、4个珍之精火和10个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 4},
+            {"name": "黝钢沙", "amount": 2},
+            {"name": "珍之精火", "amount": 4},
+            {"name": "良之精火", "amount": 10}
+        ],
+        "outputCount": 1
+    },
+    "花素绫包·12格": {
+        "description": "使用4个祝余盏、2个透花岩、4个珍之精火和10个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 4},
+            {"name": "透花岩", "amount": 2},
+            {"name": "珍之精火", "amount": 4},
+            {"name": "良之精火", "amount": 10}
+        ],
+        "outputCount": 1
+    },
+    "冰蚕锦囊·16格": {
+        "description": "使用6个低光荷汁、3个碎榴晶、5个灵草华、6个灵之精火和15个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 6},
+            {"name": "碎榴晶", "amount": 3},
+            {"name": "灵草华", "amount": 5},
+            {"name": "灵之精火", "amount": 6},
+            {"name": "珍之精火", "amount": 15}
+        ],
+        "outputCount": 1
+    },
+    "流萤荷包·18格": {
+        "description": "使用12个低光荷汁、5个至纯精华、4个灵草华、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 12},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵草华", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1
+    },
+    "织霄冠": {
+        "description": "使用2个焉酸草、1个生铁沙和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "生铁沙", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "霰雪冠": {
+        "description": "使用2个金灯红、1个黝钢沙、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "黝钢沙", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "长庚冠": {
+        "description": "使用2个祝余盏、1个透花岩、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "透花岩", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "扶将倾·冠": {
+        "description": "使用2个低光荷汁、1个碎榴晶、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "织霄履": {
+        "description": "使用2个焉酸草、1个生铁沙和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "生铁沙", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "霰雪履": {
+        "description": "使用2个金灯红、1个黝钢沙、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "黝钢沙", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "长庚履": {
+        "description": "使用2个祝余盏、1个透花岩、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "透花岩", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "扶将倾·履": {
+        "description": "使用2个低光荷汁、1个碎榴晶、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "启明袍": {
+        "description": "使用3个毛纱合成",
+        "materials": [
+            {"name": "毛纱", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 8
+    },
+    "织霄袍": {
+        "description": "使用2个焉酸草、1个生铁沙和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "生铁沙", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "霰雪袍": {
+        "description": "使用2个金灯红、1个黝钢沙、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "黝钢沙", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "长庚袍": {
+        "description": "使用2个祝余盏、1个透花岩、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "透花岩", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "扶将倾·袍": {
+        "description": "使用2个低光荷汁、1个碎榴晶、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "织霄腕": {
+        "description": "使用2个焉酸草、3个毛纱和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "霰雪腕": {
+        "description": "使用2个金灯红、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "长庚腕": {
+        "description": "使用2个祝余盏、3个���纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "扶将倾·腕": {
+        "description": "使用2个低光荷汁、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "云中君·腕": {
+        "description": "使用2个低光荷汁、3个毛纱、2个灵草华、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "灵草华", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "雪峰清寂·腕": {
+        "description": "使用4个低光荷汁、5个至纯精华、4个灵草华、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵草华", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1
+    },
+    "织霄带": {
+        "description": "使用2个焉酸草、3个毛纱和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "霰雪带": {
+        "description": "使用2个金灯红、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之���火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "长庚带": {
+        "description": "使用2个祝余盏、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "扶将倾·带": {
+        "description": "使用2个低光荷汁、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "云中君·带": {
+        "description": "使用2个低光荷汁、3个毛纱、2个灵草华、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "灵草华", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "雪峰清寂·带": {
+        "description": "使用4个低光荷汁、5个至纯精华、4个灵草华、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵草华", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1
+    },
+    "银麒冠": {
+        "description": "使用2个焉酸草、1个生铁沙和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "生铁沙", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "凤麟冠": {
+        "description": "使用2个金灯红、1个黝钢沙、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "黝钢沙", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "荧惑冠": {
+        "description": "使用2个祝余盏、1个透花岩、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "透花岩", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "风九陌·冠": {
+        "description": "使用2个低光荷汁、1个碎榴晶、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "银麒履": {
+        "description": "使用2个焉酸草、1个生铁沙和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "生铁沙", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "凤麟履": {
+        "description": "使用2个金灯红、1个黝钢沙、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "黝钢沙", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "荧惑履": {
+        "description": "使用2个祝余盏、1个透花岩、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "透花岩", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "风九陌·履": {
+        "description": "使用2个低光荷汁、1个碎榴晶、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "玄离袍": {
+        "description": "使用3个毛纱合成",
+        "materials": [
+            {"name": "毛纱", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 8
+    },
+    "银麒袍": {
+        "description": "使用2个焉酸草、1个生铁沙和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "生铁沙", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "凤麟袍": {
+        "description": "使用2个金灯红、1个黝钢沙、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "黝钢沙", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "荧惑袍": {
+        "description": "使用2个祝余盏、1个透花岩、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "透花岩", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "风九陌·袍": {
+        "description": "使用2个低光荷汁、1个碎榴晶、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "银麒腕": {
+        "description": "使用2个焉酸草、3个毛纱和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "凤麟腕": {
+        "description": "使用2个金灯红、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "荧惑腕": {
+        "description": "使用2个祝余盏、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "风九陌·腕": {
+        "description": "使用2个低光荷汁、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "重黎腕": {
+        "description": "使用2个低光荷汁、3个毛纱、2个灵草华、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "灵草华", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 18
+    },
+    "龙炎舞空·腕": {
+        "description": "使用4个低光荷汁、5个至纯精华、4个灵草华、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵草华", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1,
+        "energy": 22
+    },
+    "银麒带": {
+        "description": "使用2个焉酸草、3个毛纱和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "凤麟带": {
+        "description": "使用2个金灯红、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "荧惑带": {
+        "description": "使用2个祝余盏、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "风九陌·带": {
+        "description": "使用2个低光荷汁、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "重黎带": {
+        "description": "使用2个低光荷汁、3个毛纱、2个灵草华、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "灵草华", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 18
+    },
+    "龙炎舞空·带": {
+        "description": "使用4个低光荷汁、5个至纯精华、4个灵草华、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵草华", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1,
+        "energy": 22
+    },
+    "临花冠": {
+        "description": "使用2个焉酸草、1个生铁沙和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "生铁沙", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "玉露冠": {
+        "description": "使用2个金灯红、1个黝钢沙、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "黝钢沙", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "天渊冠": {
+        "description": "使用2个祝余盏、1个透花岩、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "透花岩", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "澹水凝·冠": {
+        "description": "使用2个低光荷汁、1个碎榴晶、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "临花履": {
+        "description": "使用2个焉酸草、1个生铁沙和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "生铁沙", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "玉露履": {
+        "description": "使用2个金灯红、1个黝钢沙、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "黝钢沙", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "天渊履": {
+        "description": "使用2个祝余盏、1个透花岩、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "透花岩", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "澹水凝·履": {
+        "description": "使用2个低光荷汁、1个碎榴晶、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "云漪袍": {
+        "description": "使用3个毛纱合成",
+        "materials": [
+            {"name": "毛纱", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 8
+    },
+    "临花袍": {
+        "description": "使用2个焉酸草、1个生铁沙和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "生铁沙", "amount": 1},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "玉露袍": {
+        "description": "使用2个金灯红、1个黝钢沙、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "黝钢沙", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "天渊袍": {
+        "description": "使用2个祝余盏、1个透花岩、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "透花岩", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "澹水凝·袍": {
+        "description": "使用2个低光荷汁、1个碎榴晶、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "临花臂": {
+        "description": "使用2个焉酸草、3个毛纱和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "玉露臂": {
+        "description": "使用2个金灯红、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "天渊臂": {
+        "description": "使用2个祝余盏、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "澹水凝·臂": {
+        "description": "使用2个低光荷汁、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "望舒臂": {
+        "description": "使用2个低光荷汁、3个毛纱、2个灵草华、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "灵草华", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 18
+    },
+    "刹那芳华·臂": {
+        "description": "使用4个低光荷汁、5个至纯精华、4个灵草华、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵草华", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1,
+        "energy": 22
+    },
+    "临花带": {
+        "description": "使用2个焉酸草、3个毛纱和2个良之精火合成",
+        "materials": [
+            {"name": "焉酸草", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "玉露带": {
+        "description": "使用2个金灯红、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "天渊带": {
+        "description": "使用2个祝余盏、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "澹水凝·带": {
+        "description": "使用2个低光荷汁、3个毛纱、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    },
+    "望舒带": {
+        "description": "使用2个低光荷汁、3个毛纱、2个灵草华、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 2},
+            {"name": "毛纱", "amount": 3},
+            {"name": "灵草华", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1,
+        "energy": 18
+    },
+    "刹那芳华·带": {
+        "description": "使用4个低光荷汁、5个至纯精华、4个灵草华、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵草华", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1,
+        "energy": 22
+    },
+    "手帕": {
+        "description": "使用1个低光荷汁、1个碎榴晶和3个毛纱合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 1},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "毛纱", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "毛球": {
+        "description": "使用1个低光荷汁、1个碎榴晶和3个毛纱合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 1},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "毛纱", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "荷包": {
+        "description": "使用1个低光荷汁、1个碎榴晶和3个毛纱合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 1},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "毛纱", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "护甲片": {
+        "description": "使用1个金灯红、1个黝钢沙、1个珍之精火和3个良之精火合成",
+        "materials": [
+            {"name": "金灯红", "amount": 1},
+            {"name": "黝钢沙", "amount": 1},
+            {"name": "珍之精火", "amount": 1},
+            {"name": "良之精火", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 10
+    },
+    "魔甲片": {
+        "description": "使用1个祝余盏、1个透花岩、1个珍之精火和3个良之精火合成",
+        "materials": [
+            {"name": "祝余盏", "amount": 1},
+            {"name": "透花岩", "amount": 1},
+            {"name": "珍之精火", "amount": 1},
+            {"name": "良之精火", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 12
+    },
+    "护甲片·聚": {
+        "description": "使用1个低光荷汁、1个碎榴晶、1个珍之精火和3个良之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 1},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "珍之精火", "amount": 1},
+            {"name": "良之精火", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 14
+    },
+    "魔甲片·聚": {
+        "description": "使用1个低光荷汁、1个碎榴晶、1个灵草华、1个灵之精火和3个珍之精火合成",
+        "materials": [
+            {"name": "低光荷汁", "amount": 1},
+            {"name": "碎榴晶", "amount": 1},
+            {"name": "灵草华", "amount": 1},
+            {"name": "灵之精火", "amount": 1},
+            {"name": "珍之精火", "amount": 3}
+        ],
+        "outputCount": 1,
+        "energy": 16
+    }
+} 

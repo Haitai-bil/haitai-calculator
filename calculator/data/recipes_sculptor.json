@@ -1,0 +1,617 @@
+{
+    "惜纷飞": {
+        "description": "使用1个栎木和1个棉绳合成",
+        "materials": [
+            {"name": "栎木", "amount": 1},
+            {"name": "棉绳", "amount": 1}
+        ],
+        "outputCount": 1
+    },
+    "云淡月": {
+        "description": "使用2个石英棉、3个棉绳和2个良之精火合成",
+        "materials": [
+            {"name": "石英棉", "amount": 2},
+            {"name": "棉绳", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "风约雨": {
+        "description": "使用2个石英棉、3个棉绳和2个良之精火合成",
+        "materials": [
+            {"name": "石英棉", "amount": 2},
+            {"name": "棉绳", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "酌夏": {
+        "description": "使用2个粗银石、3个棉绳、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "粗银石", "amount": 2},
+            {"name": "棉绳", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "闻春": {
+        "description": "使用2个粗银石、3个棉绳、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "粗银石", "amount": 2},
+            {"name": "棉绳", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "星陨雨": {
+        "description": "使用2个雄黄虬、3个棉绳、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雄黄虬", "amount": 2},
+            {"name": "棉绳", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "夜转河": {
+        "description": "使用2个雄黄虬、3个棉绳、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雄黄虬", "amount": 2},
+            {"name": "棉绳", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "批雨券": {
+        "description": "使用2个玛瑙石、3个棉绳、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "棉绳", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "上雷阙": {
+        "description": "使用2个玛瑙石、3个棉绳、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "棉绳", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "轩辕符·启": {
+        "description": "使用2个玛瑙石、3个棉绳、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "棉绳", "amount": 3},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "翠悟鸿影": {
+        "description": "使用4个玛瑙石、5个至纯精华、4个灵矿髓、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1
+    },
+    "眠风": {
+        "description": "使用2个石英棉、3个漆粉和2个良之精火合成",
+        "materials": [
+            {"name": "石英棉", "amount": 2},
+            {"name": "漆粉", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "倾秋": {
+        "description": "使用2个粗银石、3个漆粉、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "粗银石", "amount": 2},
+            {"name": "漆粉", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "阙丘": {
+        "description": "使用2个雄黄虬、3个漆粉、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雄黄虬", "amount": 2},
+            {"name": "漆粉", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "留月章": {
+        "description": "使用2个玛瑙石、3个漆粉、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "漆粉", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "卧霞": {
+        "description": "使用2个石英棉、3个线和2个良之精火合成",
+        "materials": [
+            {"name": "石英棉", "amount": 2},
+            {"name": "线", "amount": 3},
+            {"name": "良之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "吟冬": {
+        "description": "使用2个粗银石、3个线、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "粗银石", "amount": 2},
+            {"name": "线", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "鸩烛": {
+        "description": "使用2个雄黄虬、3个线、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雄黄虬", "amount": 2},
+            {"name": "线", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "支风契": {
+        "description": "使用2个玛瑙石、3个线、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "线", "amount": 3},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "轩辕令": {
+        "description": "使用2个玛瑙石、3个线、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "线", "amount": 3},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "寒烟幽梦": {
+        "description": "使用4个玛瑙石、5个至纯精华、4个灵矿髓、4个灵之精火和10个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 4},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 4},
+            {"name": "灵之精火", "amount": 4},
+            {"name": "珍之精火", "amount": 10}
+        ],
+        "outputCount": 1
+    },
+    "彩玉": {
+        "description": "使用2个玛瑙石和3个线合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "线", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "水晶扇": {
+        "description": "使用2个玛瑙石和3个线合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "线", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "腰坠": {
+        "description": "使用2个玛瑙石和3个线合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "线", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "符文石": {
+        "description": "使用2个粗银石、1个珍之精火和3个良之精火合成",
+        "materials": [
+            {"name": "粗银石", "amount": 2},
+            {"name": "珍之精火", "amount": 1},
+            {"name": "良之精火", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "咒文石": {
+        "description": "使用2个雄黄虬、1个珍之精火和3个良之精火合成",
+        "materials": [
+            {"name": "雄黄虬", "amount": 2},
+            {"name": "珍之精火", "amount": 1},
+            {"name": "良之精火", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "符文石·聚": {
+        "description": "使用2个玛瑙石、1个珍之精火和3个良之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "珍之精火", "amount": 1},
+            {"name": "良之精火", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "咒文石·聚": {
+        "description": "使用2个玛瑙石、1个灵矿髓、1个灵之精火和3个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "灵矿髓", "amount": 1},
+            {"name": "灵之精火", "amount": 1},
+            {"name": "珍之精火", "amount": 3}
+        ],
+        "outputCount": 1
+    },
+    "楠竹钓竿": {
+        "description": "使用2个粗银石、2个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "粗银石", "amount": 2},
+            {"name": "栎木", "amount": 2},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "墨竹钓竿": {
+        "description": "使用2个雄黄虬、2个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雄黄虬", "amount": 2},
+            {"name": "栎木", "amount": 2},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "琴·桐琴": {
+        "description": "使用2个雄黄虬、2个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雄黄虬", "amount": 2},
+            {"name": "栎木", "amount": 2},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "筝·轻筝": {
+        "description": "使用2个雄黄虬、2个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雄黄虬", "amount": 2},
+            {"name": "栎木", "amount": 2},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "箫·南箫": {
+        "description": "使用2个雄黄虬、2个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雄黄虬", "amount": 2},
+            {"name": "栎木", "amount": 2},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "鼓·重鼓": {
+        "description": "使用2个雄黄虬、2个栎木、2个珍之精火和5个良之精火合成",
+        "materials": [
+            {"name": "雄黄虬", "amount": 2},
+            {"name": "栎木", "amount": 2},
+            {"name": "珍之精火", "amount": 2},
+            {"name": "良之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "荡邪符（核心）": {
+        "description": "使用2个玛瑙石、2个都夷枝、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "洗心符（气血）": {
+        "description": "使用2个玛瑙石、2个都夷枝、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "殒天符（会心）": {
+        "description": "使用2个玛瑙石、2个都夷枝、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "渡尘符（调息）": {
+        "description": "使用2个玛瑙石、2个都夷枝、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "封灵符（专精）": {
+        "description": "使用2个玛瑙石、2个都夷枝、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "辟尘符（破甲）": {
+        "description": "使用2个玛瑙石、2个都夷枝、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "化煞符（化伤）": {
+        "description": "使用2个玛瑙石、2个都夷枝、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "通玄荡邪符（核心）": {
+        "description": "使用2个玛瑙石、2个都夷枝、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "通玄洗心符（气血）": {
+        "description": "使用2个玛瑙石、2个都夷枝、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "通玄殒天符（会心）": {
+        "description": "使用2个玛瑙石、2个都夷枝、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "通玄渡尘符（调息）": {
+        "description": "使用2个玛瑙石、2个都夷枝、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "通玄封灵符（专精）": {
+        "description": "使用2个玛瑙石、2个都夷枝、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "通玄辟尘符（破甲）": {
+        "description": "使用2个玛瑙石、2个都夷枝、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "通玄化煞符（化伤）": {
+        "description": "使用2个玛瑙石、2个都夷枝、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "都夷枝", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "焚真符（核心）": {
+        "description": "使用2个玛瑙石、2个半边莲子、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "清音符（气血）": {
+        "description": "使用2个玛瑙石、2个半边莲子、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "破劫符（会心）": {
+        "description": "使用2个玛瑙石、2个半边莲子、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "缥缈符（调息）": {
+        "description": "使用2个玛瑙石、2个半边莲子、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "聚星符（专精）": {
+        "description": "使用2个玛瑙石、2个半边莲子、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "破星符（破甲）": {
+        "description": "使用2个玛瑙石、2个半边莲子、2个灵矿髓、2个灵之精火和5个珍之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2},
+            {"name": "珍之精火", "amount": 5}
+        ],
+        "outputCount": 1
+    },
+    "通玄焚真符（核心）": {
+        "description": "使用2个玛瑙石、2个半边莲子、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "通玄清音符（气血）": {
+        "description": "使用2个玛瑙石、2个半边莲子、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "通玄破劫符（会心）": {
+        "description": "使用2个玛瑙石、2个半边莲子、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "通玄缥缈符（调息）": {
+        "description": "使用2个玛瑙石、2个半边莲子、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "通玄聚星符（专精）": {
+        "description": "使用2个玛瑙石、2个半边莲子、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    },
+    "通玄破星符（破甲）": {
+        "description": "使用2个玛瑙石、2个半边莲子、5个至纯精华、2个灵矿髓和2个灵之精火合成",
+        "materials": [
+            {"name": "玛瑙石", "amount": 2},
+            {"name": "半边莲子", "amount": 2},
+            {"name": "至纯精华", "amount": 5},
+            {"name": "灵矿髓", "amount": 2},
+            {"name": "灵之精火", "amount": 2}
+        ],
+        "outputCount": 1
+    }
+} 
