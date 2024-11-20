@@ -101,6 +101,11 @@ class RecipeManager {
                 // 显示合成公式
                 displayCraftMethod(recipe);
 
+                // 设置元气消耗 - 从全局 energyCostData 中获取
+                const energyCost = window.energyCostData?.[profession]?.[recipeName] || 0;
+                document.getElementById('make-energy').textContent = energyCost;
+                window.currentRecipe.energy = energyCost;
+
                 // 触发计算
                 calculateProfit();
             }
