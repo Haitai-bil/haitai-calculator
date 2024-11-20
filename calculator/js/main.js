@@ -62,7 +62,7 @@ function createMaterialList(containerId, items) {
     });
 }
 
-// 初始化事件监��器
+// 初始化事件监听器
 function initializeEventListeners() {
     // 为所有材料价格输入框添加事件监听
     document.querySelectorAll('.material-item .price').forEach(input => {
@@ -133,7 +133,6 @@ function calculateProfit() {
     
     // 获取元气消耗
     const makeEnergy = window.energyCostData?.[profession]?.[recipeName] || 0;
-    console.log('元气消耗:', {profession, recipeName, makeEnergy, energyCostData: window.energyCostData}); // 调试日志
     
     // 更新元气消耗显示
     document.getElementById('make-energy').textContent = makeEnergy;

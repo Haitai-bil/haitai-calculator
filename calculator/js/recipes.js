@@ -41,6 +41,26 @@ class RecipeManager {
             if (recipes.length > 0) {
                 this.loadRecipe(recipes[0]);
             }
+
+            // 如果选择了烹饪职业，显示中央提示
+            if (profession === 'cooking') {
+                createModal({
+                    title: '烹饪制作说明',
+                    content: `
+                        <div style="text-align: center; padding: 20px;">
+                            <p style="font-size: 16px; color: #2c3e50; margin-bottom: 15px;">
+                                <strong>烹饪制作费用说明</strong>
+                            </p>
+                            <p style="color: #34495e; line-height: 1.6;">
+                                制作烹饪配方时，系统会自动计入额外的制作费用。<br>
+                                此费用将在最终利润中自动扣除。
+                            </p>
+                        </div>
+                    `,
+                    showClose: true,
+                    autoClose: 4000
+                });
+            }
         } catch (error) {
             showNotification('加载配方失败', error.message, 'error');
         }
