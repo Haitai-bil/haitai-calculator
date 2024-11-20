@@ -6,12 +6,38 @@
     <title>海苔生活系统</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <style>
+        /* 添加自定义字体 */
+        @font-face {
+            font-family: '字魂POP海报体';
+            src: url('fonts/字魂POP海报体.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* 修改标题样式 */
+        h1 {
+            font-family: '字魂POP海报体', 'Microsoft YaHei', Arial, sans-serif !important;
+            color: #2c3e50;
+            margin: 1rem auto;
+            font-size: 5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+            position: relative;
+            display: block;
+            font-weight: normal;
+            letter-spacing: 0.05em;
+            text-align: center;
+            line-height: 1;
+            padding: 10px 0;
+            white-space: nowrap;
+        }
+
+        /* 修改正文字体 */
         body {
-            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            font-family: '字魂POP海报体', 'Microsoft YaHei', Arial, sans-serif;
             margin: 0;
             padding: 0;
             min-height: 100vh;
-            background: url('images/3840.jpg') no-repeat center center fixed;
+            background: url('../3840.jpg') no-repeat center center fixed;
             background-size: cover;
             display: flex;
             justify-content: center;

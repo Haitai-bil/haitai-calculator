@@ -7,6 +7,31 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <style>
+	        /* 添加自定义字体 */
+        @font-face {
+            font-family: '字魂POP海报体';
+            src: url('fonts/字魂POP海报体.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* 修改全局字体 */
+        body {
+            font-family: '字魂POP海报体', 'Microsoft YaHei', Arial, sans-serif;
+            font-weight: normal;
+        }
+
+        /* 确保标题使用自定义字体且不使用粗体 */
+        h1, h2, h3, .material-title, .result-title, .contact-label {
+            font-family: '字魂POP海报体', 'Microsoft YaHei', Arial, sans-serif !important;
+            font-weight: normal !important;
+        }
+
+        /* 移除其他可能的粗体效果 */
+        .announcement, .result-label, .contact-value, .material-header span {
+            font-weight: normal;
+        }
+		
         /* 添加页面加载动画 */
         .page-loader {
             position: fixed;
