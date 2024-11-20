@@ -62,7 +62,7 @@ function createMaterialList(containerId, items) {
     });
 }
 
-// 初始化事件监听器
+// 初始化事件监��器
 function initializeEventListeners() {
     // 为所有材料价格输入框添加事件监听
     document.querySelectorAll('.material-item .price').forEach(input => {
@@ -111,6 +111,7 @@ function calculateProfit() {
     const auctionPrice = parseFloat(document.getElementById('auction-price').value) || 0;
     const materialCost = calculateMaterialCost();
     const profession = document.getElementById('profession-select').value;
+    const recipeName = document.getElementById('recipe-select').value;
     
     // 获取烹饪成本
     let cookingCost = 0;
@@ -131,8 +132,8 @@ function calculateProfit() {
     document.getElementById('profit-rate').textContent = formatNumber(profitRate, 2) + '%';
     
     // 获取元气消耗
-    const recipeName = document.getElementById('recipe-select').value;
-    const makeEnergy = energyCostData?.[profession]?.[recipeName] || 0;
+    const makeEnergy = window.energyCostData?.[profession]?.[recipeName] || 0;
+    console.log('元气消耗:', {profession, recipeName, makeEnergy, energyCostData: window.energyCostData}); // 调试日志
     
     // 更新元气消耗显示
     document.getElementById('make-energy').textContent = makeEnergy;
@@ -428,7 +429,7 @@ function savePrices() {
 
 // 添加加载配方数据的函数
 async function loadAllRecipes() {
-    const professions = ['blacksmith', 'tailor', 'alchemist', 'sculptor'];
+    const professions = ['blacksmith', 'tailor', 'alchemist', 'sculptor', 'cooking'];
     recipeData = {};
     
     for (const profession of professions) {
@@ -446,7 +447,9 @@ async function loadAllRecipes() {
 async function loadEnergyCost() {
     try {
         const response = await fetch('data/energy_cost.json');
-        energyCostData = await response.json();
+        const data = await response.json();
+        window.energyCostData = data;  // 保存到全局变量
+        energyCostData = data;
     } catch (error) {
         console.error('加载元气消耗数据失败:', error);
         showNotification('错误', '加载元气消耗数据失败', 'error');
