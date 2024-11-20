@@ -22,7 +22,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 // 初始化材料列表
 function initializeMaterialLists() {
     // 初始化杂货材料
-    const miscItems = ["良之精火", "珍之精火", "灵之精火", "至纯精华"];
+    const miscItems = [
+        "良之精火", "珍之精火", "灵之精火", "至纯精华",
+        // 添加新的鱼鲜系列
+        "1级鱼鲜", "2级鱼鲜", "3级鱼鲜", "4级鱼鲜", "5级鱼鲜",
+        // 添加新的特殊物品
+        "涵虚·麒麟兰寿", "雪豹兰寿", "玉面红袍"
+    ];
     createMaterialList('misc-materials', miscItems);
 
     // 初始化矿物材料
@@ -104,19 +110,27 @@ function calculateMaterialCost() {
 function calculateProfit() {
     const auctionPrice = parseFloat(document.getElementById('auction-price').value) || 0;
     const materialCost = calculateMaterialCost();
+    const profession = document.getElementById('profession-select').value;
     
-    // 预期利润 = 拍卖行价格 - 材料总成本
-    const profit = auctionPrice - materialCost;
+    // 获取烹饪成本
+    let cookingCost = 0;
+    if (profession === 'cooking' && window.currentRecipe) {
+        cookingCost = window.currentRecipe.cookingCost || 0;
+    }
+    
+    // 预期利润 = 拍卖行价格 - 材料总成本 - 烹饪成本
+    const profit = auctionPrice - materialCost - cookingCost;
     
     // 更新显示
+    document.getElementById('total-cost').textContent = formatNumber(materialCost + cookingCost) + ' 银两';
     document.getElementById('profit').textContent = formatNumber(profit) + ' 银两';
     
     // 计算利润率
-    const profitRate = materialCost > 0 ? (profit / materialCost * 100) : 0;
+    const totalCost = materialCost + cookingCost;
+    const profitRate = totalCost > 0 ? (profit / totalCost * 100) : 0;
     document.getElementById('profit-rate').textContent = formatNumber(profitRate, 2) + '%';
     
     // 获取元气消耗
-    const profession = document.getElementById('profession-select').value;
     const recipeName = document.getElementById('recipe-select').value;
     const makeEnergy = energyCostData?.[profession]?.[recipeName] || 0;
     
@@ -298,7 +312,7 @@ async function loadRecipe(recipeName) {
             // 更新全局当前配方
             window.currentRecipe = recipe;
             
-            // 清��所有材料数量
+            // 清所有材料数量
             document.querySelectorAll('.material-item .quantity').forEach(input => {
                 input.value = 0;
             });

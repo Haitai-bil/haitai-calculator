@@ -65,7 +65,8 @@ class RecipeManager {
             'blacksmith': 'data/recipes_blacksmith.json',
             'tailor': 'data/recipes_tailor.json',
             'alchemist': 'data/recipes_alchemist.json',
-            'sculptor': 'data/recipes_sculptor.json'
+            'sculptor': 'data/recipes_sculptor.json',
+            'cooking': 'data/recipes_cooking.json'
         };
         return fileMap[profession];
     }

@@ -1,0 +1,199 @@
+{
+    "箸头春": {
+        "materials": [
+            {"name": "1级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "丹桂白玉圆": {
+        "materials": [
+            {"name": "1级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "仙宫酿": {
+        "materials": [
+            {"name": "1级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "剪云斫鱼片": {
+        "materials": [
+            {"name": "1级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "寒浆玉液羹": {
+        "materials": [
+            {"name": "1级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "山海兜": {
+        "materials": [
+            {"name": "2级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 65
+    },
+    "紫金蛋": {
+        "materials": [
+            {"name": "2级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "醍醐醒": {
+        "materials": [
+            {"name": "2级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "金盏肉": {
+        "materials": [
+            {"name": "2级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "霜降骨": {
+        "materials": [
+            {"name": "2级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "太学饼": {
+        "materials": [
+            {"name": "3级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "满山香": {
+        "materials": [
+            {"name": "3级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "脆琅盘": {
+        "materials": [
+            {"name": "3级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "阎罗饭": {
+        "materials": [
+            {"name": "3级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "驱冬煎": {
+        "materials": [
+            {"name": "3级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "九味清欢粥": {
+        "materials": [
+            {"name": "4级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "云梦虾": {
+        "materials": [
+            {"name": "4级鱼鲜", "amount": 30}
+        ],
+        "cookingCost": 50
+    },
+    "剔缕鸡": {
+        "materials": [
+            {"name": "4级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "汤浴绣鸡": {
+        "materials": [
+            {"name": "4级鱼鲜", "amount": 35}
+        ],
+        "cookingCost": 25
+    },
+    "雪泥客": {
+        "materials": [
+            {"name": "4级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "佛跳墙": {
+        "materials": [
+            {"name": "5级鱼鲜", "amount": 20},
+            {"name": "4级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "单笼乳鸽汤": {
+        "materials": [
+            {"name": "5级鱼鲜", "amount": 20},
+            {"name": "4级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "如意海参": {
+        "materials": [
+            {"name": "5级鱼鲜", "amount": 20},
+            {"name": "4级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "忘忧仙茸汤": {
+        "materials": [
+            {"name": "5级鱼鲜", "amount": 20},
+            {"name": "4级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "雪霞炖": {
+        "materials": [
+            {"name": "5级鱼鲜", "amount": 20},
+            {"name": "4级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "水晶玻璃虾": {
+        "materials": [
+            {"name": "4级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "罂乳鱼": {
+        "materials": [
+            {"name": "4级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "蟹撞橙": {
+        "materials": [
+            {"name": "4级鱼鲜", "amount": 20}
+        ],
+        "cookingCost": 50
+    },
+    "鱼饼": {
+        "materials": [
+            {"name": "涵虚·麒麟兰寿", "amount": 4},
+            {"name": "雪豹兰寿", "amount": 2},
+            {"name": "玉面红袍", "amount": 1}
+        ],
+        "cookingCost": 0
+    },
+    "鱼糕": {
+        "materials": [
+            {"name": "涵虚·麒麟兰寿", "amount": 4},
+            {"name": "雪豹兰寿", "amount": 2},
+            {"name": "玉面红袍", "amount": 1}
+        ],
+        "cookingCost": 0
+    },
+    "鱼汤": {
+        "materials": [
+            {"name": "涵虚·麒麟兰寿", "amount": 4},
+            {"name": "雪豹兰寿", "amount": 2},
+            {"name": "玉面红袍", "amount": 1}
+        ],
+        "cookingCost": 0
+    }
+} 
