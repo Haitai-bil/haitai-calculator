@@ -275,7 +275,7 @@
         }
 
         .function-card {
-            /* 保持原样式 */
+            /* 保持原��式 */
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 0.8s ease-out forwards;
@@ -524,11 +524,19 @@
         // 更新访问统计
         document.addEventListener('DOMContentLoaded', function() {
             const visitorCountRef = database.ref('visitorCount');
+            const TODAY = new Date().toDateString();
+            const lastVisit = localStorage.getItem('lastVisit');
             
-            // 直接更新计数
-            visitorCountRef.transaction(currentCount => {
-                return (currentCount || 0) + 1;
-            });
+            // 检查是否是今天第一次访问
+            if (lastVisit !== TODAY) {
+                // 更新访问计数
+                visitorCountRef.transaction(currentCount => {
+                    return (currentCount || 0) + 1;
+                });
+                
+                // 记录这次访问
+                localStorage.setItem('lastVisit', TODAY);
+            }
             
             // 实时更新显示
             visitorCountRef.on('value', snapshot => {
