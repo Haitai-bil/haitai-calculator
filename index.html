@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>海苔生活系统</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
     <style>
         /* 添加自定义字体 */
         @font-face {
             font-family: '字魂POP海报体';
-            src: url('calculator/fonts/字魂POP海报体.ttf') format('truetype');
+            src: url('fonts/字魂POP海报体.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
@@ -64,26 +66,6 @@
             width: 100%;
         }
 
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-            position: relative;
-            display: inline-block;
-        }
-
-        h1::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60%;
-            height: 3px;
-            background: linear-gradient(90deg, transparent, #3498db, transparent);
-        }
-
         .marquee-container {
             background: rgba(255, 255, 255, 0.8);
             padding: 15px;
@@ -111,7 +93,7 @@
 
         .announcement {
             color: #e74c3c;
-            font-weight: bold;
+            font-weight: normal;
             font-size: 1.1em;
         }
 
@@ -293,7 +275,7 @@
         }
 
         .function-card {
-            /* 保持原有样式 */
+            /* 保持原样式 */
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 0.8s ease-out forwards;
@@ -308,7 +290,7 @@
         }
 
         .contact-info {
-            /* 保持原有样式 */
+            /* 保持有样式 */
             opacity: 0;
             animation: fadeInUp 0.8s ease-out 1s forwards;
         }
@@ -330,13 +312,13 @@
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
 
-        /* 优化禁用卡片的动画效果 */
+        /* 优化禁用片的动画效果 */
         .disabled-card:hover {
             transform: none;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
 
-        /* 添加页面加载动画 */
+        /* 添加页面加载动 */
         .page-loader {
             position: fixed;
             top: 0;
@@ -445,6 +427,28 @@
         .contact-info:hover {
             transform: scale(1.05);
         }
+
+        .visitor-counter {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 1rem auto;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+
+        #visitorCount {
+            font-weight: bold;
+            color: #3498db;
+            margin: 0 5px;
+            min-width: 30px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -457,25 +461,32 @@
         <div style="text-align: center; margin-bottom: 20px;">
             <img src="image1.png" alt="海苔生活系统" style="max-width: 200px; height: auto; border-radius: 8px;">
         </div>
-		
+        
         <h1 class="animate-title">海苔生活系统</h1>
         
         <div class="marquee-container animate-marquee">
             <div class="marquee">
-                <span class="announcement">公告：欢迎使用海苔生活系统！目前计算器功能已开放使用，更多功能正在开发中，敬请期待！如有问题请联系QQ或加入QQ群！</span>
+                <span class="announcement">公告：欢迎用海苔生活系统！目前计算器功能已放使，更功能正在开发中，敬请期待！如有问题请联系QQ或加入QQ群！</span>
             </div>
         </div>
 
+        <!-- 修改访问计数器的HTML -->
+        <div class="visitor-counter">
+            <span>累计访问：</span>
+            <span id="visitorCount">加载中...</span>
+            <span>人次</span>
+        </div>
+
         <div class="function-grid">
-            <a href="calculator/calculator.html" style="text-decoration: none;">
+            <a href="calculator.html" style="text-decoration: none;">
                 <div class="function-card">
                     <h2>生活系统计算器</h2>
-                    <p>制作物品成本收益计算工具，帮助您合理规划生产，最大化收益。</p>
+                    <p>制作物品成本收益计算工具，帮您合理规划最大化收益。</p>
                 </div>
             </a>
             <div class="function-card disabled-card">
                 <h2>更多功能开发中</h2>
-                <p>海苔正在开发更多实用功能，敬请期待更新...</p>
+                <p>我们正在开发更多实用功能，敬请期待更新...</p>
             </div>
         </div>
         
@@ -494,7 +505,39 @@
     <div class="copy-notification" id="copyNotification">已复制到剪贴板！</div>
 
     <script>
-        // 页面加载完成后移除加载动画
+        // Firebase 配置
+        const firebaseConfig = {
+            apiKey: "AIzaSyB8HiiuVhBg31t8waAeyDed-Ua3i0zfCkQ",
+            authDomain: "haitai-bil.firebaseapp.com",
+            projectId: "haitai-bil",
+            storageBucket: "haitai-bil.firebaseapp.com",
+            messagingSenderId: "415510862163",
+            appId: "1:415510862163:web:6a9694338abaa59eaca9a6",
+            measurementId: "G-4YFD1C0RHW",
+            databaseURL: "https://haitai-bil-default-rtdb.asia-southeast1.firebasedatabase.app"
+        };
+
+        // 初始化 Firebase
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+
+        // 更新访问统计
+        document.addEventListener('DOMContentLoaded', function() {
+            const visitorCountRef = database.ref('visitorCount');
+            
+            // 直接更新计数
+            visitorCountRef.transaction(currentCount => {
+                return (currentCount || 0) + 1;
+            });
+            
+            // 实时更新显示
+            visitorCountRef.on('value', snapshot => {
+                const count = snapshot.val() || 0;
+                document.getElementById('visitorCount').textContent = count;
+            });
+        });
+
+        // 页面加载完后移除加载动画
         window.addEventListener('load', function() {
             // 处理跑马灯
             const marquee = document.querySelector('.marquee');
@@ -534,7 +577,7 @@
 
         function copyToClipboard(text, element) {
             navigator.clipboard.writeText(text).then(() => {
-                // 添加复制动画
+                // 加复制动画
                 element.style.animation = 'copySuccess 0.5s ease';
                 setTimeout(() => {
                     element.style.animation = '';
