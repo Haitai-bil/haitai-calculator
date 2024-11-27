@@ -1,0 +1,923 @@
+<style>
+    /* 修改自定义字体 */
+    @font-face {
+        font-family: '字小魂卷耳猫';
+        src: url('../fonts/字小魂卷耳猫.ttf') format('truetype');
+    }
+
+    /* 应用字体到整个容器 */
+    body {
+        font-family: '字小魂卷耳猫', sans-serif;
+    }
+
+    /* 特别设置标题字体 */
+    .section-title {
+        font-family: '字小魂卷耳猫', sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #333;
+        margin: 15px 0 10px 0;
+        padding-left: 10px;
+        border-left: 4px solid #409EFF;
+    }
+
+    /* 设置选单字体 */
+    .top-select,
+    .equipment-options select,
+    .equipment-label {
+        font-family: '字小魂卷耳猫', sans-serif;
+    }
+
+    .equipment-container {
+        padding: 10px;
+        max-width: 1200px;
+        margin: 0;
+    }
+
+    .equipment-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        padding: 5px 0;
+    }
+
+    .equipment-label {
+        width: 80px;
+        font-weight: bold;
+        flex-shrink: 0;
+        color: #333;
+        padding-left: 0;
+    }
+
+    .equipment-options {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-start;
+        flex-grow: 1;
+        padding-left: 0;
+    }
+
+    /* 基础选单样式 */
+    .equipment-options select {
+        padding: 8px 15px;
+        border-radius: 20px;
+        width: 150px;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+        appearance: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: none;
+        color: #333;
+    }
+
+    /* 装备选择框样式 */
+    .equipment-select {
+        border: 2px solid rgba(64, 158, 255, 0.5) !important;
+    }
+    .equipment-select:hover {
+        background-color: rgba(64, 158, 255, 0.1) !important;
+        box-shadow: 0 0 10px rgba(64, 158, 255, 0.3);
+    }
+
+    /* 附魔选择框样式 */
+    .enchant-select {
+        border: 2px solid rgba(103, 194, 58, 0.5) !important;
+    }
+    .enchant-select:hover {
+        background-color: rgba(103, 194, 58, 0.1) !important;
+        box-shadow: 0 0 10px rgba(103, 194, 58, 0.3);
+    }
+
+    /* 精炼选择框样式 */
+    .refine-select {
+        border: 2px solid rgba(230, 162, 60, 0.5) !important;
+    }
+    .refine-select:hover {
+        background-color: rgba(230, 162, 60, 0.1) !important;
+        box-shadow: 0 0 10px rgba(230, 162, 60, 0.3);
+    }
+
+    /* 选单焦点样式 */
+    .equipment-select:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(64, 158, 255, 0.4);
+    }
+    .enchant-select:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(103, 194, 58, 0.4);
+    }
+    .refine-select:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(230, 162, 60, 0.4);
+    }
+
+    /* 下拉箭头样式 */
+    .equipment-options select {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 1em;
+        padding-right: 30px;
+    }
+
+    /* 选项样式 */
+    .equipment-options select option {
+        background-color: white;
+        color: #333;
+        padding: 10px;
+    }
+
+    /* 添加顶部选择区域样式 */
+    .top-options {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        padding: 5px 0;
+    }
+
+    .top-select {
+        padding: 8px 15px;
+        border-radius: 20px;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+        appearance: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: none;
+        color: #333;
+    }
+
+    /* 职业选择框样式 */
+    .class-select {
+        border: 2px solid rgba(147, 112, 219, 0.5) !important;
+    }
+    .class-select:hover {
+        background-color: rgba(147, 112, 219, 0.1) !important;
+        box-shadow: 0 0 10px rgba(147, 112, 219, 0.3);
+    }
+    .class-select:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(147, 112, 219, 0.4);
+    }
+
+    /* 品质选择框样式 */
+    .quality-select {
+        border: 2px solid rgba(255, 215, 0, 0.5) !important;
+    }
+    .quality-select:hover {
+        background-color: rgba(255, 215, 0, 0.1) !important;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+    .quality-select:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    }
+
+    /* 为顶部选单添加下拉箭头 */
+    .top-select {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 1em;
+        padding-right: 30px;
+    }
+
+    /* 修改主容器布局 */
+    .main-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* 创建左侧装备区域容器 */
+    .left-equipment-container {
+        display: flex;
+        gap: 0;
+        flex: 4;
+    }
+
+    .equipment-section {
+        flex: 2;
+    }
+
+    .starsoul-section {
+        flex: 1;
+        margin-left: -200px;
+    }
+
+    .attributes-section {
+        flex: 1;
+        margin-left: -100px;
+    }
+
+    /* 总属性显示样式 */
+    .total-attributes {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        padding: 15px;
+        position: sticky;
+        top: 20px;
+        max-width: 280px;
+        margin-right: 10px;
+    }
+
+    /* 修改属性行的样式 */
+    .attribute-row {
+        display: flex;
+        justify-content: flex-start; /* 改为左对齐 */
+        gap: 15px; /* 添加固定间距 */
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .attribute-label {
+        color: #333;
+        font-weight: bold;
+        min-width: 70px; /* 给标签一个最小宽度 */
+    }
+
+    .attribute-value {
+        color: #409EFF;
+        font-weight: bold;
+    }
+
+    /* 添加外框容器样式 */
+    .settings-container {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 25px;
+        padding: 30px;
+        margin: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* 调整内部间距 */
+    .section-title:first-child {
+        margin-top: 0;  /* 移除第一标题的上边距 */
+    }
+
+    /* 属性选择框样式 */
+    .attribute-select {
+        border: 2px solid rgba(147, 112, 219, 0.5) !important;
+    }
+    .attribute-select:hover {
+        background-color: rgba(147, 112, 219, 0.1) !important;
+        box-shadow: 0 0 10px rgba(147, 112, 219, 0.3);
+    }
+    .attribute-select:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(147, 112, 219, 0.4);
+    }
+
+    /* 数值输入框样式 */
+    .attribute-value-input {
+        width: 150px;
+        padding: 8px 15px;
+        border-radius: 20px;
+        border: 2px solid rgba(255, 140, 0, 0.5);
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+        color: #333;
+        font-family: '字小魂卷耳猫', sans-serif;
+        transition: all 0.3s ease;
+    }
+
+    .attribute-value-input:hover {
+        background-color: rgba(255, 140, 0, 0.1);
+        box-shadow: 0 0 10px rgba(255, 140, 0, 0.3);
+    }
+
+    .attribute-value-input:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
+    }
+
+    /* 移除输入框的上下箭头 */
+    .attribute-value-input::-webkit-inner-spin-button,
+    .attribute-value-input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .attribute-value-input {
+        -moz-appearance: textfield;
+    }
+
+    /* 修改星魄区域的样式 */
+    .starsoul-section {
+        flex: 1;
+    }
+
+    /* 调整星魄选项的宽度和对齐 */
+    .starsoul-section .equipment-options {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+
+    /* 调整星魄选择器的宽度 */
+    .starsoul-section .equipment-select {
+        width: 120px;
+    }
+
+    .starsoul-section .attribute-select {
+        width: 120px;
+    }
+
+    .starsoul-section .attribute-value-input {
+        width: 150px;
+    }
+
+    /* 调整星魄标签宽度和对齐 */
+    .starsoul-section .equipment-label {
+        width: 60px;
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    /* 调整左侧装备容器的比例 */
+    .left-equipment-container {
+        gap: 0;
+    }
+
+    .equipment-section {
+        flex: 2;
+        padding-right: 20px;
+    }
+</style>
+
+<!-- 在最上方添加新的视频层 -->
+
+<!-- 原有的背景视频 -->
+<div style="position: fixed; right: 0; bottom: 0; width: 100%; height: 100%; z-index: -2; opacity: 1;">
+    <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+        <source src="https://zxsjvmg.wmupd.com/webops/zxsj/guanwangwuzi20241017.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- 修改外框容器的style -->
+<div class="settings-container" style="position: absolute; left: 20px; top: 20px; width: 1300px; height: 700px;">
+
+    <!-- 原有的基础设置内容 -->
+    <div class="section-title" style="position: absolute; left: 50px; top: 50px;">基础设置</div>
+    <div class="top-options" style="position: absolute; left: 50px; top: 90px;">
+        <select class="top-select class-select">
+            <option value="">选择职业</option>
+            <option value="guiwang">鬼王</option>
+            <option value="qingyun">青云</option>
+            <option value="fenxiang">焚香</option>
+            <option value="lingxi">灵汐</option>
+            <option value="hehuan">合欢</option>
+        </select>
+        
+        <select class="top-select quality-select">
+            <option value="">选择品质</option>
+            <option value="245">245品质</option>
+            <option value="265">265品质</option>
+            <option value="285">285品质</option>
+            <option value="295">295品质</option>
+        </select>
+    </div>
+
+    <div class="main-container">
+        <!-- 左侧装备和星魄区域容器 -->
+        <div class="left-equipment-container">
+            <!-- 装备设置区域 -->
+            <div class="equipment-section" style="position: absolute; left: 50px; top: 140px;">
+                <div class="section-title">装备设置</div>
+                <div class="equipment-container">
+                    <!-- 帽子 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">帽子</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择帽子</option>
+                            </select>
+                            <select class="enchant-select">
+                                <option value="">选择附魔</option>
+                            </select>
+                            <select class="refine-select">
+                                <option value="">精炼等级</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 上衣 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">上衣</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择上衣</option>
+                            </select>
+                            <select class="enchant-select">
+                                <option value="">选择附魔</option>
+                            </select>
+                            <select class="refine-select">
+                                <option value="">精炼等级</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 护腕 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">护腕</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择护腕</option>
+                            </select>
+                            <select class="enchant-select">
+                                <option value="">选择附魔</option>
+                            </select>
+                            <select class="refine-select">
+                                <option value="">精炼等级</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 武器 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">武器</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择武器</option>
+                            </select>
+                            <select class="enchant-select">
+                                <option value="">选择附魔</option>
+                            </select>
+                            <select class="refine-select">
+                                <option value="">精炼等级</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 腰带 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">腰带</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择腰带</option>
+                            </select>
+                            <select class="enchant-select">
+                                <option value="">选择附魔</option>
+                            </select>
+                            <select class="refine-select">
+                                <option value="">精炼等级</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 鞋子 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">鞋子</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择鞋</option>
+                            </select>
+                            <select class="enchant-select">
+                                <option value="">选择附魔</option>
+                            </select>
+                            <select class="refine-select">
+                                <option value="">精炼等级</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 护符1 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">护符1</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择护符</option>
+                            </select>
+                            <select class="enchant-select">
+                                <option value="">选择附魔</option>
+                            </select>
+                            <select class="refine-select">
+                                <option value="">精炼等级</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 护符2 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">护符2</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择护符</option>
+                            </select>
+                            <select class="enchant-select">
+                                <option value="">选择附魔</option>
+                            </select>
+                            <select class="refine-select">
+                                <option value="">精炼等级</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 法印 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">法印</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择法印</option>
+                            </select>
+                            <select class="enchant-select">
+                                <option value="">选择附魔</option>
+                            </select>
+                            <select class="refine-select">
+                                <option value="">精炼等级</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 令牌 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">令牌</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择令牌</option>
+                            </select>
+                            <select class="enchant-select">
+                                <option value="">选择附魔</option>
+                            </select>
+                            <select class="refine-select">
+                                <option value="">精炼等级</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 星魄设置区域 -->
+            <div class="starsoul-section" style="position: absolute; left: 800px; top: 140px;">
+                <div class="section-title">星魄设置</div>
+                <div class="equipment-container">
+                    <!-- 星魄1 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">星魄1</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择星魄</option>
+                            </select>
+                            <select class="attribute-select">
+                                <option value="">选择属性</option>
+                            </select>
+                            <input type="number" class="attribute-value-input" placeholder="输入数值" min="0">
+                        </div>
+                    </div>
+
+                    <!-- 星魄2 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">星魄2</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择星魄</option>
+                            </select>
+                            <select class="attribute-select">
+                                <option value="">选择属性</option>
+                            </select>
+                            <input type="number" class="attribute-value-input" placeholder="输入数值" min="0">
+                        </div>
+                    </div>
+
+                    <!-- 星魄3 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">星魄3</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择星魄</option>
+                            </select>
+                            <select class="attribute-select">
+                                <option value="">选择属性</option>
+                            </select>
+                            <input type="number" class="attribute-value-input" placeholder="输入数值" min="0">
+                        </div>
+                    </div>
+
+                    <!-- 星魄4 -->
+                    <div class="equipment-row">
+                        <div class="equipment-label">星魄4</div>
+                        <div class="equipment-options">
+                            <select class="equipment-select">
+                                <option value="">选择星魄</option>
+                            </select>
+                            <select class="attribute-select">
+                                <option value="">选择属性</option>
+                            </select>
+                            <input type="number" class="attribute-value-input" placeholder="输入数值" min="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧属性显示区域 -->
+        <div class="attributes-section" style="position: absolute; left: 1300px; top: 140px;">
+            <!-- 主属性 -->
+            <div class="section-title">主属性</div>
+            <div class="total-attributes">
+                <div class="attribute-row">
+                    <span class="attribute-label">力</span>
+                    <span class="attribute-value" data-attribute="力">0</span>
+                </div>
+                <div class="attribute-row">
+                    <span class="attribute-label">敏</span>
+                    <span class="attribute-value" data-attribute="敏">0</span>
+                </div>
+                <div class="attribute-row">
+                    <span class="attribute-label">体</span>
+                    <span class="attribute-value" data-attribute="体">0</span>
+                </div>
+                <div class="attribute-row">
+                    <span class="attribute-label">灵</span>
+                    <span class="attribute-value" data-attribute="灵">0</span>
+                </div>
+                <div class="attribute-row">
+                    <span class="attribute-label">精</span>
+                    <span class="attribute-value" data-attribute="精">0</span>
+                </div>
+            </div>
+
+            <!-- 攻击面板 -->
+            <div class="section-title" style="margin-top: 20px;">攻击面板</div>
+            <div class="total-attributes">
+                <div class="attribute-row">
+                    <span class="attribute-label">物理攻击</span>
+                    <span class="attribute-value" data-attribute="物理攻击">0</span>
+                </div>
+                <div class="attribute-row">
+                    <span class="attribute-label">法术攻击</span>
+                    <span class="attribute-value" data-attribute="法术攻击">0</span>
+                </div>
+                <div class="attribute-row">
+                    <span class="attribute-label">会心</span>
+                    <span class="attribute-value" data-attribute="会心">0</span>
+                </div>
+                <div class="attribute-row">
+                    <span class="attribute-label">调息</span>
+                    <span class="attribute-value" data-attribute="调息">0</span>
+                </div>
+                <div class="attribute-row">
+                    <span class="attribute-label">专精</span>
+                    <span class="attribute-value" data-attribute="专精">0</span>
+                </div>
+                <div class="attribute-row">
+                    <span class="attribute-label">破甲</span>
+                    <span class="attribute-value" data-attribute="破甲">0</span>
+                </div>
+                <div class="attribute-row">
+                    <span class="attribute-label">命中</span>
+                    <span class="attribute-value" data-attribute="命中">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 在HTML底部添���script标签 -->
+<script>
+    // 获取选择器
+    const classSelect = document.querySelector('.class-select');
+    const qualitySelect = document.querySelector('.quality-select');
+    const equipmentSelects = document.querySelectorAll('.equipment-select');
+    
+    // 职业与文件名的映射
+    const classFileMap = {
+        'guiwang': 'ghost_equipment.json',
+        'qingyun': 'qingyun_equipment.json',
+        'fenxiang': 'fenxiang_equipment.json',
+        'hehuan': 'hehuan_equipment.json',
+        'lingxi': 'lingxi_equipment.json'
+    };
+
+    // 修改品质等级映射
+    const qualityLevelMap = {
+        '245': [245, 245],
+        '265': [265, 265],
+        '285': [285, 285],
+        '295': [295, 295]
+    };
+    
+    // 更新装备选项的函数
+    async function updateEquipmentOptions() {
+        const selectedClass = classSelect.value;
+        const selectedQuality = qualitySelect.value;
+        
+        if (selectedClass && classFileMap[selectedClass]) {
+            try {
+                // 读取装备数据
+                const response = await fetch(`data/${classFileMap[selectedClass]}`);
+                const equipmentData = await response.json();
+                
+                // 更新每个装备选择器的选项
+                equipmentSelects.forEach((select, index) => {
+                    // 清空现有选项
+                    select.innerHTML = '<option value="">请选择</option>';
+                    
+                    // 获取装备类型
+                    const equipTypes = ['帽子', '衣服', '护腕', '武器', '腰带', 
+                                     '鞋子', '护符1', '护符2', '法印', '令牌',
+                                     '星魄1', '星魄2', '星魄3', '星魄4'];
+                    const currentEquipType = equipTypes[index];
+                    let equipList = equipmentData[currentEquipType] || [];
+
+                    // 修改品质筛选逻辑
+                    if (selectedQuality) {
+                        equipList = equipList.filter(equip => 
+                            equip.level === parseInt(selectedQuality)
+                        );
+                    }
+                    
+                    // 添加筛选后的装备选项
+                    equipList.forEach(equip => {
+                        const option = document.createElement('option');
+                        option.value = equip.id;
+                        option.textContent = equip.name;
+                        select.appendChild(option);
+                    });
+                });
+            } catch (error) {
+                console.error(`加载${selectedClass}装备数据失败:`, error);
+            }
+        } else {
+            // 清空所有装备选项
+            equipmentSelects.forEach(select => {
+                select.innerHTML = '<option value="">请选择</option>';
+            });
+        }
+    }
+    
+    // 监听职业和品质选择的变化
+    classSelect.addEventListener('change', updateEquipmentOptions);
+    qualitySelect.addEventListener('change', updateEquipmentOptions);
+
+    // 初始化精炼选择器的选项
+    function initRefineOptions() {
+        const refineSelects = document.querySelectorAll('.refine-select');
+        refineSelects.forEach(select => {
+            select.innerHTML = `
+                <option value="">精炼等级</option>
+                <option value="0">精炼+0</option>
+                <option value="1">精炼+1</option>
+                <option value="2">精炼+2</option>
+                <option value="3">精炼+3</option>
+                <option value="4">炼+4</option>
+                <option value="5">精炼+5</option>
+                <option value="6">精炼+6</option>
+            `;
+        });
+    }
+
+    // 定义精炼属性计算函数
+    function calculateRefineAttributes(equipment, refineLevel) {
+        const refineBonus = {
+            0: { multiplier: 0 },
+            1: { multiplier: 0.1 },  // 基础属性提升10%
+            2: { multiplier: 0.2 },  // 基础属性提升20%
+            3: { multiplier: 0.3 },  // 基础属性提升30%
+            4: { multiplier: 0.4 },  // 基础属性提升40%
+            5: { multiplier: 0.5 },  // 基础属性提升50%
+            6: { multiplier: 0.6 }   // 基础属性提升60%
+        };
+
+        if (!equipment || !refineLevel) return {};
+
+        const bonus = refineBonus[refineLevel] || { multiplier: 0 };
+        const attributes = { ...equipment.attributes };
+
+        // 计算精炼后的属性值
+        for (let attr in attributes) {
+            attributes[attr] = Math.floor(attributes[attr] * (1 + bonus.multiplier));
+        }
+
+        return attributes;
+    }
+
+    // 监听精炼等级变化
+    function initRefineListeners() {
+        const refineSelects = document.querySelectorAll('.refine-select');
+        refineSelects.forEach((select, index) => {
+            select.addEventListener('change', function() {
+                updateTotalAttributes(); // 需要创建这个函数来更新总属性显示
+            });
+        });
+    }
+
+    // 修改更新总属性显示的函数
+    function updateTotalAttributes() {
+        const totalAttributes = {
+            '力': 0, '敏': 0, '体': 0, '灵': 0, '精': 0,
+            '物理攻击': 0, '法术攻击': 0, '会心': 0, '调息': 0,
+            '专精': 0, '破甲': 0, '命中': 0
+        };
+
+        // 计算星魄属性（移到前面，确保基础属性先计算）
+        const starsoulRows = document.querySelectorAll('.starsoul-section .equipment-row');
+        starsoulRows.forEach(row => {
+            const attributeSelect = row.querySelector('.attribute-select');
+            const valueInput = row.querySelector('.attribute-value-input');
+            
+            const selectedAttr = attributeSelect.value;
+            const attrValue = parseInt(valueInput.value) || 0;
+            
+            if (selectedAttr && totalAttributes.hasOwnProperty(selectedAttr)) {
+                totalAttributes[selectedAttr] += attrValue;
+                
+                // 立即更新显示
+                const element = document.querySelector(`[data-attribute="${selectedAttr}"]`);
+                if (element) {
+                    element.textContent = totalAttributes[selectedAttr];
+                }
+            }
+        });
+
+        // 计算装备属性
+        equipmentSelects.forEach((select, index) => {
+            const equipmentId = select.value;
+            const refineLevel = document.querySelectorAll('.refine-select')[index].value;
+            
+            if (equipmentId && refineLevel) {
+                const equipment = getCurrentEquipmentData(equipmentId);
+                if (equipment) {
+                    const refinedAttributes = calculateRefineAttributes(equipment, parseInt(refineLevel));
+                    
+                    for (let attr in refinedAttributes) {
+                        if (totalAttributes.hasOwnProperty(attr)) {
+                            totalAttributes[attr] += refinedAttributes[attr];
+                        }
+                    }
+                }
+            }
+        });
+
+        // 更新显示
+        for (let attr in totalAttributes) {
+            const element = document.querySelector(`[data-attribute="${attr}"]`);
+            if (element) {
+                element.textContent = totalAttributes[attr];
+            }
+        }
+    }
+
+    // 获取当前装备数据的辅助函数
+    function getCurrentEquipmentData(equipmentId) {
+        // 这个函数需要根据你的数据结构来实现
+        // 返回当前选中装备的数据
+        return null; // 临时返回
+    }
+
+    // 初始化属性选器的选项
+    function initAttributeOptions() {
+        const attributeSelects = document.querySelectorAll('.attribute-select');
+        const attributes = [
+            '力', '敏', '体', '灵', '精',
+            '物理攻击', '法术攻击', '会心', '调息',
+            '专精', '破甲', '命中'
+        ];
+        
+        attributeSelects.forEach(select => {
+            select.innerHTML = '<option value="">选择属性</option>';
+            attributes.forEach(attr => {
+                const option = document.createElement('option');
+                option.value = attr;
+                option.textContent = attr;
+                select.appendChild(option);
+            });
+        });
+    }
+
+    // 修改星魄监听器
+    function initStarsoulListeners() {
+        const starsoulRows = document.querySelectorAll('.starsoul-section .equipment-row');
+        
+        starsoulRows.forEach(row => {
+            const attributeSelect = row.querySelector('.attribute-select');
+            const valueInput = row.querySelector('.attribute-value-input');
+            
+            // 监听属性选择变化
+            attributeSelect.addEventListener('change', function() {
+                // 当选择新属性时，清空输入框
+                valueInput.value = '';
+                updateTotalAttributes();
+            });
+            
+            // 监听数值输入变化
+            valueInput.addEventListener('input', function() {
+                // 确保输入的是非负数
+                if (this.value < 0) this.value = 0;
+                updateTotalAttributes();
+            });
+        });
+    }
+
+    // 页加载初始化
+    document.addEventListener('DOMContentLoaded', function() {
+        initRefineOptions();
+        initRefineListeners();
+        initAttributeOptions();
+        initStarsoulListeners(); // 添加星魄监听器初始化
+    });
+</script>

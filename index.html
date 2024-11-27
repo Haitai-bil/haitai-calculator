@@ -33,13 +33,13 @@
             white-space: nowrap;
         }
 
-        /* 修改正文字体 */
+        /* 修改正文字体和背景 */
         body {
             font-family: '字魂POP海报体', 'Microsoft YaHei', Arial, sans-serif;
             margin: 0;
             padding: 0;
             min-height: 100vh;
-            background: url('../3840.jpg') no-repeat center center fixed;
+            background: url('https://zxsj.wanmei.com/images/inside241011/head-bg.jpg') no-repeat center center fixed;
             background-size: cover;
             display: flex;
             justify-content: center;
@@ -111,7 +111,6 @@
             background: rgba(255, 255, 255, 0.8);
             padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
@@ -121,27 +120,82 @@
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 0.8s ease-out forwards;
-        }
-
-        .function-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-            transform: translateX(-100%);
-            transition: 0.5s;
+            text-decoration: none;
+            color: #2c3e50;
         }
 
         .function-card:hover {
-            transform: translateY(-5px) rotateX(5deg) rotateY(5deg);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            color: white;
+        }
+
+        /* 添加涟漪效果 */
+        .function-card::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            border-radius: 100%;
+            transform: scale(1, 1) translate(-50%);
+            transform-origin: 50% 50%;
+        }
+
+        .function-card:hover::after {
+            animation: ripple 1s ease-out;
+        }
+
+        /* 添加悬浮提示效果 */
+        .function-card::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-10px);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
         }
 
         .function-card:hover::before {
-            transform: translateX(100%);
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(-5px);
+        }
+
+        /* 添加涟漪动画 */
+        @keyframes ripple {
+            0% {
+                transform: scale(0, 0);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(40, 40);
+                opacity: 0;
+            }
+        }
+
+        /* 修改禁用卡片的样式 */
+        .disabled-card:hover {
+            transform: none;
+            background: rgba(255, 255, 255, 0.8);
+            color: #2c3e50;
+            cursor: not-allowed;
+        }
+
+        .disabled-card::after,
+        .disabled-card::before {
+            display: none;
         }
 
         .function-card h2 {
@@ -275,7 +329,7 @@
         }
 
         .function-card {
-            /* 保持原��式 */
+            /* 保持原式 */
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 0.8s ease-out forwards;
@@ -452,21 +506,31 @@
     </style>
 </head>
 <body>
-    <!-- 添加页面加载动画 -->
+    <!-- 在body开始处添加两个视频层 -->
+    <!-- 第一个视频背景 -->
+    <div style="position: fixed; right: 0; bottom: 0; width: 100%; height: 100%; z-index: -2; opacity: 1; mix-blend-mode: screen;">
+        <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="https://zxsj.wanmei.com/images/cover231129/fire.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- 原有的页面加载动画 -->
     <div class="page-loader">
         <div class="loader"></div>
     </div>
 
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 20px;">
-            <img src="image1.png" alt="海苔生活系统" style="max-width: 200px; height: auto; border-radius: 8px;">
+    <div class="container" style="margin-top: 100px;">
+        <!-- 移动图片到标题上方 -->
+        
+        <div style="text-align: center; margin-bottom: 20px; position: absolute; left: 120px; top: 100px;">
+            <img src="image1.png" alt="海苔生活系统" style="max-width: 100px; height: auto; border-radius: 8px;">
         </div>
         
         <h1 class="animate-title">海苔生活系统</h1>
         
         <div class="marquee-container animate-marquee">
             <div class="marquee">
-                <span class="announcement">公告：欢迎用海苔生活系统！目前计算器功能已放使，更功能正在开发中，敬请期待！如有问题请联系QQ或加入QQ群！</span>
+                <span class="announcement">公告：欢迎用海苔生活系统！目前计算器功能已开放使用，更多功能正在开发中，敬请期待！如有问题请联系QQ或加入QQ群！</span>
             </div>
         </div>
 
@@ -478,13 +542,15 @@
         </div>
 
         <div class="function-grid">
-            <a href="calculator/calculator.html" style="text-decoration: none;">
-                <div class="function-card">
-                    <h2>生活系统计算器</h2>
-                    <p>制作物品成本收益计算工具，帮您合理规划最大化收益。</p>
-                </div>
+            <a href="calculator/calculator.html" class="function-card" data-tooltip="制作物品成本收益计算工具，帮您合理规划最大化收益。">
+                <h2>生活系统计算器</h2>
+                <p>制作物品成本收益计算工具，帮您合理规划最大化收益。</p>
             </a>
-            <div class="function-card disabled-card">
+            <a href="equipment/equipment.html" class="function-card" data-tooltip="角色配装模拟器，帮您规划最佳装备搭配。">
+                <h2>配装器</h2>
+                <p>角色配装模拟器，帮您规划最佳装备搭配。</p>
+            </a>
+            <div class="function-card disabled-card" data-tooltip="海苔正在开发更多实用功能，敬请期待更新...">
                 <h2>更多功能开发中</h2>
                 <p>我们正在开发更多实用功能，敬请期待更新...</p>
             </div>
@@ -505,44 +571,25 @@
     <div class="copy-notification" id="copyNotification">已复制到剪贴板！</div>
 
     <script>
-        // Firebase 配置
-        const firebaseConfig = {
-            apiKey: "AIzaSyB8HiiuVhBg31t8waAeyDed-Ua3i0zfCkQ",
-            authDomain: "haitai-bil.firebaseapp.com",
-            projectId: "haitai-bil",
-            storageBucket: "haitai-bil.firebaseapp.com",
-            messagingSenderId: "415510862163",
-            appId: "1:415510862163:web:6a9694338abaa59eaca9a6",
-            measurementId: "G-4YFD1C0RHW",
-            databaseURL: "https://haitai-bil-default-rtdb.asia-southeast1.firebasedatabase.app"
-        };
-
-        // 初始化 Firebase
-        firebase.initializeApp(firebaseConfig);
-        const database = firebase.database();
-
-        // 更新访问统计
+        // 使用 localStorage 实现简单的访问统计
         document.addEventListener('DOMContentLoaded', function() {
-            const visitorCountRef = database.ref('visitorCount');
+            const TOTAL_COUNT_KEY = 'totalVisitors';
+            const LAST_VISIT_KEY = 'lastVisit';
             const TODAY = new Date().toDateString();
-            const lastVisit = localStorage.getItem('lastVisit');
+            
+            // 获取当前总访问量
+            let totalCount = parseInt(localStorage.getItem(TOTAL_COUNT_KEY) || '0');
+            const lastVisit = localStorage.getItem(LAST_VISIT_KEY);
             
             // 检查是否是今天第一次访问
             if (lastVisit !== TODAY) {
-                // 更新访问计数
-                visitorCountRef.transaction(currentCount => {
-                    return (currentCount || 0) + 1;
-                });
-                
-                // 记录这次访问
-                localStorage.setItem('lastVisit', TODAY);
+                totalCount++;
+                localStorage.setItem(TOTAL_COUNT_KEY, totalCount);
+                localStorage.setItem(LAST_VISIT_KEY, TODAY);
             }
             
-            // 实时更新显示
-            visitorCountRef.on('value', snapshot => {
-                const count = snapshot.val() || 0;
-                document.getElementById('visitorCount').textContent = count;
-            });
+            // 更新显示
+            document.getElementById('visitorCount').textContent = totalCount;
         });
 
         // 页面加载完后移除加载动画
